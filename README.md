@@ -133,11 +133,18 @@ section .text$A
         mov		rsi, rsp
 ``````
 
-5. manually remove and change one hex value
+5. Last step is to  manually remove using the [Hxd tool](https://mh-nexus.de/en/hxd/) to  change one hex value
 
-    Step 4 and 5 refer the following blog
+    Step 4 and 5 refer the that [blog](https://karma-x.io/blog/post/18/) and the demo below
 
-    https://karma-x.io/blog/post/18/
+    [Click here to check out demo for manually modifying the hex value](https://drive.google.com/file/d/13tZNTVFa5PXiA4tVN17b8KBguBuCT-M-/view)
+
+
+<video width="600" controls>
+  <source src="https://drive.google.com/file/d/13tZNTVFa5PXiA4tVN17b8KBguBuCT-M-/view" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 
 
 6. The whole modified havoc is here, you can download and compile your own to make modificatio and YARA check using a simple python script with updated yara rules
