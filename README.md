@@ -4,7 +4,7 @@
 This was during one of red team I had to modify open-source C2 to make YARA free, therefore it would be safer to execute in memory by a loader and evade 
 common YARA scanning by EDRs. I was able to achieve 0% YARA detections. The main steps are the following:
 
-1.Modify payloads/Demon/scripts/hash_func.py to generate different hash values that are flagged by YARA rules
+1.Modify [hash_func.py](https://github.com/JimKw1kX/Havoc-C2-Modification-YARA-Free/blob/main/Havoc/payloads/Demon/scripts/hash_func.py) to generate different hash values that are flagged by YARA rules
 
 ```js
 import sys
@@ -45,7 +45,7 @@ if __name__ in '__main__':
         print('usage: %s [string]' % sys.argv[0]);
 ```
 
-2.Replace them in payloads/Demon/include/Common/Define.h
+2.Replace them in [Define.h](https://github.com/JimKw1kX/Havoc-C2-Modification-YARA-Free/blob/main/Havoc/payloads/Demon/include/common/Defines.h)
 
 ```js
 define XOR_KEY 0xA5A5A5A5
@@ -63,7 +63,7 @@ define XOR_KEY 0xA5A5A5A5
 #define H_FUNC_NTOPENPROCESSTOKEN 0x90a86f3c
 #define H_FUNC_NTOPENTHREADTOKEN 0x2596e277
 ```
-3. Add the XOR logic in payloads/Demon/src/core/Win32.c, the idea is to dynamicly XORing back to the orignal values of the API hash functions during run time, so YARA will not flag the hardcoded values in demon.bin defined in Define.h
+3. Add the XOR logic in [Win32.c](https://github.com/JimKw1kX/Havoc-C2-Modification-YARA-Free/blob/main/Havoc/payloads/Demon/src/core/Win32.c), the idea is to dynamicly XORing back to the orignal values of the API hash functions during run time, so YARA will not flag the hardcoded values in demon.bin defined in [Define.h](https://github.com/JimKw1kX/Havoc-C2-Modification-YARA-Free/blob/main/Havoc/payloads/Demon/include/common/Defines.h)
 
 ```js
 #define XOR_KEY 0xA5A5A5A5 // the key we used to xor the hash values
@@ -100,7 +100,7 @@ PVOID LdrFunctionAddr(
 
 ```
 
-4. Modify the Havoc/payloads/Shellcode/Source/Asm/x64.Asm.s Assemby and add a dummy functions to break the ROP gadget logic to evade YARA detection 
+4. Modify the [Asm.s](https://github.com/JimKw1kX/Havoc-C2-Modification-YARA-Free/blob/main/Havoc/payloads/Shellcode/Source/Asm/x64/Asm.s) Assemby and add a dummy functions to break the ROP gadget logic to evade YARA detection 
 
 `````js
 ; Define the dummy function
@@ -147,7 +147,7 @@ section .text$A
 
 
 
-6. The whole modified havoc is here, you can download and compile your own to make modificatio and YARA check using a simple python script with updated yara rules
+6. The whole modified havoc is here, you can download and compile your own to make modificatio and YARA check using a simple [python script](https://github.com/JimKw1kX/Havoc-C2-Modification-YARA-Free/blob/main/Yara%20Scan%20Checker/yara_check.py) like the following with updated [yara rules](https://github.com/elastic/protections-artifacts), you can add [pe-sieve](https://github.com/hasherezade/pe-sieve) and [moneta](https://github.com/forrest-orr/moneta) in the script to check addtioanl memory region for the shellcode and modify it accordingly.
 
 
 ```js
@@ -174,14 +174,7 @@ for fileanme in os.listdir(directory):
 
 # DEMO 
 
-<video width="600" controls>
-  <source src="https://drive.google.com/file/d/1vkOEhy7eR_kjewiJaoxkTosBVLG5HxkB/view" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-
-
-[You can also check out the demo here](https://drive.google.com/file/d/1vkOEhy7eR_kjewiJaoxkTosBVLG5HxkB/view?usp=sharing)
+You can also check out the demo for the final version of the cleaned shellcode YARA scan [here](https://drive.google.com/file/d/1vkOEhy7eR_kjewiJaoxkTosBVLG5HxkB/view?usp=sharing)
 
 
 
