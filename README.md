@@ -1,8 +1,7 @@
 # Havoc-C2-Modification-YARA-Free
 
 # POC of modifying YARA signautre on [Havoc C2](https://github.com/HavocFramework/Havoc). 
-This was during one of red team I had to modify open-source C2 to make YARA free, therefore it would be safer to execute in memory by a loader and evade 
-common YARA scanning by EDRs. I was able to achieve 0% YARA detections. The main steps are the following:
+This project was from a red team engagement where I modified an open-source Command-and-Control (C2) framework to ensure it was YARA-free, enabling safer in-memory execution via a loader and evading detection by common YARA scans used by Endpoint Detection and Response (EDR) systems. I successfully achieved 0% YARA detection. The main steps are as follows:
 
 1.Modify [hash_func.py](https://github.com/JimKw1kX/Havoc-C2-Modification-YARA-Free/blob/main/Havoc/payloads/Demon/scripts/hash_func.py) to generate different hash values that are flagged by YARA rules
 
