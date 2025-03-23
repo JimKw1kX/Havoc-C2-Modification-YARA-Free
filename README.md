@@ -165,10 +165,16 @@ for fileanme in os.listdir(directory):
 
 ```
 
-# DEMO
+# DEMO 
 
 <video width="600" controls>
-  <source src="https://drive.google.com/file/d/1vkOEhy7eR_kjewiJaoxkTosBVLG5HxkB/view?usp=sharing" type="video/mp4">
+  <source src="https://drive.google.com/file/d/1vkOEhy7eR_kjewiJaoxkTosBVLG5HxkB/view" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+
+
+[You can also check out the demo here](https://drive.google.com/file/d/1vkOEhy7eR_kjewiJaoxkTosBVLG5HxkB/view?usp=sharing)
+
+
 
