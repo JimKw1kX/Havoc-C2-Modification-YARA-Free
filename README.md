@@ -16,8 +16,7 @@ def hash_string( string ):
         for x in string.upper():
             hash = (( hash << 5 ) + hash ) + ord(x)
 
-
-        # hash ^= 0xA5A5A5A5
+            hash ^= 0xA5A5A5A5 // we are xoring the hash values with the key 
 
         return hash & 0xFFFFFFFF
     except:
@@ -31,7 +30,8 @@ def hash_coffapi( string ):
             hash = (( hash << 5 ) + hash ) + ord(x)
 
         
-        # hash ^= 0xA5A5A5A5
+            hash ^= 0xA5A5A5A5 // we are xoring the hash values with the key  
+
 
         return hash & 0xFFFFFFFF
     except:
