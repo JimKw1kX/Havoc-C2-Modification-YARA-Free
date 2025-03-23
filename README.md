@@ -1,6 +1,6 @@
 # Havoc-C2-Modification-YARA-Free
 
-# POC of modifying YARA signautre on Havoc C2. 
+# POC of modifying YARA signautre on [Havoc C2](https://github.com/HavocFramework/Havoc). 
 This was during one of red team I had to modify open-source C2 to make YARA free, therefore it would be safer to execute in memory by a loader and evade 
 common YARA scanning by EDRs. I was able to achieve 0% YARA detections. The main steps are the following:
 
