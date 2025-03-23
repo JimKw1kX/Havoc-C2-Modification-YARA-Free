@@ -137,7 +137,7 @@ section .text$A
 
     Step 4 and 5 refer the that [blog](https://karma-x.io/blog/post/18/) and the demo below
 
-    [Click here to check out demo for manually modifying the hex value](https://drive.google.com/file/d/13tZNTVFa5PXiA4tVN17b8KBguBuCT-M-/view)
+    Click [here](https://drive.google.com/file/d/13tZNTVFa5PXiA4tVN17b8KBguBuCT-M-/view) to check out demo for manually modifying the hex value
 
 
 <video width="600" controls>
