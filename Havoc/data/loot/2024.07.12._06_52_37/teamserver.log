@@ -1,0 +1,60 @@
+              _______           _______  _______ 
+    │\     /│(  ___  )│\     /│(  ___  )(  ____ \
+    │ )   ( ││ (   ) ││ )   ( ││ (   ) ││ (    \/
+    │ (___) ││ (___) ││ │   │ ││ │   │ ││ │      
+    │  ___  ││  ___  │( (   ) )│ │   │ ││ │      
+    │ (   ) ││ (   ) │ \ \_/ / │ │   │ ││ │      
+    │ )   ( ││ )   ( │  \   /  │ (___) ││ (____/\
+    │/     \││/     \│   \_/   (_______)(_______/
+
+  	 pwn and elevate until it's done
+
+[06:52:37] [DBUG] [cmd.init.func2:59]: Debug mode enabled
+[06:52:37] [INFO] Havoc Framework [Version: 0.7] [CodeName: Bites The Dust]
+[06:52:37] [INFO] Havoc profile: ./profiles/havoc.yaotl
+[06:52:37] [INFO] Build: 
+ - Compiler x64 : data/x86_64-w64-mingw32-cross/bin/x86_64-w64-mingw32-gcc
+ - Compiler x86 : data/i686-w64-mingw32-cross/bin/i686-w64-mingw32-gcc
+ - Nasm         : /usr/bin/nasm
+[06:52:37] [INFO] Time: 12/07/2024 06:52:37
+[06:52:37] [INFO] Teamserver logs saved under: data/loot/2024.07.12._06:52:37
+[06:52:37] [DBUG] [server.(*Teamserver).Start:53]: Starting teamserver...
+[06:52:37] [INFO] Starting Teamserver on wss://0.0.0.0:40056
+[06:52:37] [INFO] [SERVICE] starting service handle on wss://0.0.0.0:40056/service-endpoint
+[06:52:37] [INFO] Opens existing database: data/teamserver.db
+[06:52:37] [INFO] Starting 1 listeners from last session
+[06:52:37] [DBUG] [handlers.(*HTTP).Start:204]: Setup HTTP/s Server
+[06:52:37] [INFO] Started "1" listener: http://192.168.17.137:80
+[06:52:37] [DBUG] [certs.HTTPSGenerateRSACertificate:301]: Generating TLS certificate (RSA) for '0.0.0.0' ...
+[06:52:37] [INFO] Restored 2 agents from last session
+[06:52:37] [DBUG] [server.(*Teamserver).Start:492]: Wait til the server shutdown
+[06:52:37] [DBUG] [certs.generateCertificate:223]: Valid from 2024-02-15 06:52:37.977354576 -0500 EST to 2027-02-14 06:52:37.977354576 -0500 EST
+[06:52:37] [DBUG] [certs.generateCertificate:228]: Serial Number: 146530876819981216487690048897603752551
+[06:52:37] [DBUG] [certs.generateCertificate:234]: Authority certificate
+[06:52:37] [DBUG] [certs.generateCertificate:247]: ExtKeyUsage = [1 2]
+[06:52:37] [DBUG] [certs.generateCertificate:263]: Certificate authenticates IP address: 0.0.0.0
+[06:52:37] [DBUG] [certs.generateCertificate:278]: Certificate is an AUTHORITY
+[06:52:40] [DBUG] [server.(*Teamserver).ClientAuthenticate:658]: Found User: 5pider
+[06:52:40] [DBUG] [server.(*Teamserver).ClientAuthenticate:665]: User 5pider is authenticated
+[06:52:40] [GOOD] User <5pider> Authenticated
+[06:52:44] [DBUG] [builder.NewBuilder:179]: Payload Builder: Enable Debug Mode false
+[06:52:44] [DBUG] [server.(*Teamserver).DispatchEvent.func18:882]: Windows Shellcode
+[06:52:44] [DBUG] [builder.(*Builder).PatchConfig:579]: map[Amsi/Etw Patch:None Indirect Syscall:false Injection:map[Alloc:Native/Syscall Execute:Native/Syscall Spawn32:C:\Windows\SysWOW64\notepad.exe Spawn64:C:\Windows\System32\notepad.exe] Jitter:15 Proxy Loading:None (LdrLoadDll) Sleep:2 Sleep Jmp Gadget:None Sleep Technique:WaitForSingleObjectEx Stack Duplication:false]
+[06:52:44] [DBUG] [builder.(*Builder).PatchConfig:915]: Host => 192.168.17.137
+[06:52:44] [DBUG] [builder.(*Builder).PatchConfig:940]: host only
+[06:52:44] [DBUG] [builder.(*Builder).PatchConfig:971]: 
+[06:52:44] [DBUG] [builder.(*Builder).PatchConfig:982]: 
+[06:52:44] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Spoof.x64.asm -o /tmp/920855eb94/ea6fa5f974.o
+[06:52:44] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Syscall.x64.asm -o /tmp/920855eb94/8d1e85ed91.o
+[06:52:44] [DBUG] [builder.(*Builder).Build:389]: Compile dll and prepend shellcode to it.
+[06:52:44] [DBUG] [builder.NewBuilder:179]: Payload Builder: Enable Debug Mode false
+[06:52:44] [DBUG] [builder.(*Builder).SetPatchConfig:465]: Set Patch config from Profile
+[06:52:44] [DBUG] [builder.(*Builder).PatchConfig:579]: map[Amsi/Etw Patch:None Indirect Syscall:false Injection:map[Alloc:Native/Syscall Execute:Native/Syscall Spawn32:C:\Windows\SysWOW64\notepad.exe Spawn64:C:\Windows\System32\notepad.exe] Jitter:15 Proxy Loading:None (LdrLoadDll) Sleep:2 Sleep Jmp Gadget:None Sleep Technique:WaitForSingleObjectEx Stack Duplication:false]
+[06:52:44] [DBUG] [builder.(*Builder).PatchConfig:915]: Host => 192.168.17.137
+[06:52:44] [DBUG] [builder.(*Builder).PatchConfig:940]: host only
+[06:52:44] [DBUG] [builder.(*Builder).PatchConfig:971]: 
+[06:52:44] [DBUG] [builder.(*Builder).PatchConfig:982]: 
+[06:52:44] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Spoof.x64.asm -o /tmp/df0a15f223/1a35a3e572.o
+[06:52:44] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Syscall.x64.asm -o /tmp/df0a15f223/88ee938b28.o
+[06:52:44] [DBUG] [builder.(*Builder).Build:379]: Compile dll
+[06:53:42] [DBUG] [builder.(*Builder).Build:410]: Successful compiled Dll

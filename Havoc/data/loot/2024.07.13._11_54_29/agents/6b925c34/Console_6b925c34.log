@@ -1,0 +1,94 @@
+
+[Time: 13/07/2024 17:03:15] [User: 5pider] [TaskID: 168279B4] Demon => sleep 3
+[13/07/2024 17:03:15] [+] Send Task to Agent [20 bytes]
+
+[Time: 13/07/2024 17:03:16] [User: 5pider] [TaskID: 293D0E5B] Demon => 
+
+[Time: 13/07/2024 17:03:16] [User: 5pider] [TaskID: 293D0E5B] Demon => whoami
+
+[Time: 13/07/2024 17:03:17] [User: 5pider] [TaskID: 3B7219DE] Demon => dir
+[13/07/2024 17:03:19] [+] Set sleep interval to 3 seconds with 0% jitter
+[13/07/2024 17:03:19] [+] Send Task to Agent [31 bytes]
+[13/07/2024 17:03:23] [+] Received Output [3577 bytes]:
+
+UserName		SID
+====================== ====================================
+WINDEV2401EVAL\User	S-1-5-21-492658040-2737317036-1342630635-1000
+
+
+GROUP INFORMATION                                 Type                     SID                                          Attributes               
+================================================= ===================== ============================================= ==================================================
+WINDEV2401EVAL\None                               Group                    S-1-5-21-492658040-2737317036-1342630635-513  Mandatory group, Enabled by default, Enabled group, 
+Everyone                                          Well-known group         S-1-1-0                                       Mandatory group, Enabled by default, Enabled group, 
+NT AUTHORITY\Local account and member of Administrators groupWell-known group         S-1-5-114                                     
+BUILTIN\Administrators                            Alias                    S-1-5-32-544                                  
+BUILTIN\Users                                     Alias                    S-1-5-32-545                                  Mandatory group, Enabled by default, Enabled group, 
+BUILTIN\Performance Log Users                     Alias                    S-1-5-32-559                                  Mandatory group, Enabled by default, Enabled group, 
+NT AUTHORITY\INTERACTIVE                          Well-known group         S-1-5-4                                       Mandatory group, Enabled by default, Enabled group, 
+CONSOLE LOGON                                     Well-known group         S-1-2-1                                       Mandatory group, Enabled by default, Enabled group, 
+NT AUTHORITY\Authenticated Users                  Well-known group         S-1-5-11                                      Mandatory group, Enabled by default, Enabled group, 
+NT AUTHORITY\This Organization                    Well-known group         S-1-5-15                                      Mandatory group, Enabled by default, Enabled group, 
+NT AUTHORITY\Local account                        Well-known group         S-1-5-113                                     Mandatory group, Enabled by default, Enabled group, 
+LOCAL                                             Well-known group         S-1-2-0                                       Mandatory group, Enabled by default, Enabled group, 
+NT AUTHORITY\NTLM Authentication                  Well-known group         S-1-5-64-10                                   Mandatory group, Enabled by default, Enabled group, 
+Mandatory Label\Medium Mandatory Level            Label                    S-1-16-8192                                   Mandatory group, Enabled by default, Enabled group, 
+
+
+Privilege Name                Description                                       State                         
+============================= ================================================= ===========================
+SeShutdownPrivilege           Shut down the system                              Disabled                      
+SeChangeNotifyPrivilege       Bypass traverse checking                          Enabled                       
+SeUndockPrivilege             Remove computer from docking station              Disabled                      
+SeIncreaseWorkingSetPrivilege Increase a process working set                    Disabled                      
+SeTimeZonePrivilege           Change the time zone                              Disabled                      
+[13/07/2024 17:03:23] [*] BOF execution completed
+ Directory of C:\Users\User\*:
+
+01/07/2024  15:05    <DIR>                 .dotnet 
+13/07/2024  08:52    <DIR>                 .ghidra 
+01/07/2024  14:04    <DIR>                 .templateengine
+11/07/2024  09:49    <DIR>                 .vscode 
+13/07/2024  17:12    <DIR>                 AppData 
+28/05/2024  14:42    <DIR>                 Application Data
+01/07/2024  15:32    <DIR>                 Contacts
+28/05/2024  14:42    <DIR>                 Cookies 
+13/07/2024  17:19    <DIR>                 Desktop 
+13/07/2024  08:39    <DIR>                 Documents
+13/07/2024  17:48    <DIR>                 Downloads
+08/07/2024  22:13    <DIR>                 Favorites
+06/07/2024  11:10           0 B            Havoc.gpr
+13/07/2024  11:38    <DIR>                 Havoc.rep
+01/07/2024  15:32    <DIR>                 Links   
+28/05/2024  14:42    <DIR>                 Local Settings
+13/07/2024  08:39    <DIR>                 Music   
+28/05/2024  14:42    <DIR>                 My Documents
+28/05/2024  14:42    <DIR>                 NetHood 
+10/07/2024  11:52           4.98 MB        NTUSER.DAT
+28/05/2024  14:42           524.29 kB      ntuser.dat.LOG1
+28/05/2024  14:42           1.29 MB        ntuser.dat.LOG2
+11/07/2024  09:27           0 B            NTUSER.DAT{3a2bdf29-b03a-11ee-883b-000c29f21a02}.TxR.0.regtrans-ms
+11/07/2024  09:27           0 B            NTUSER.DAT{3a2bdf29-b03a-11ee-883b-000c29f21a02}.TxR.1.regtrans-ms
+11/07/2024  09:27           0 B            NTUSER.DAT{3a2bdf29-b03a-11ee-883b-000c29f21a02}.TxR.2.regtrans-ms
+11/07/2024  09:27           0 B            NTUSER.DAT{3a2bdf29-b03a-11ee-883b-000c29f21a02}.TxR.blf
+02/06/2024  08:42           65.54 kB       NTUSER.DAT{3a2bdf2a-b03a-11ee-883b-000c29f21a02}.TM.blf
+10/07/2024  11:52           524.29 kB      NTUSER.DAT{3a2bdf2a-b03a-11ee-883b-000c29f21a02}.TMContainer00000000000000000001.regtrans-ms
+28/05/2024  14:42           524.29 kB      NTUSER.DAT{3a2bdf2a-b03a-11ee-883b-000c29f21a02}.TMContainer00000000000000000002.regtrans-ms
+13/07/2024  08:39           20 B           ntuser.ini
+01/07/2024  15:06    <DIR>                 OneDrive
+13/07/2024  16:47           908.05 kB      out.exe 
+13/07/2024  17:25    <DIR>                 Pictures
+28/05/2024  14:42    <DIR>                 PrintHood
+28/05/2024  14:42    <DIR>                 Recent  
+01/07/2024  15:32    <DIR>                 Saved Games
+09/07/2024  09:03    <DIR>                 Searches
+28/05/2024  14:42    <DIR>                 SendTo  
+20/06/2024  11:13           0 B            shellcode.gpr
+06/07/2024  11:10    <DIR>                 shellcode.rep
+11/07/2024  09:32    <DIR>                 source  
+28/05/2024  14:42    <DIR>                 Start Menu
+28/05/2024  14:42    <DIR>                 Templates
+13/07/2024  08:39    <DIR>                 Videos  
+03/06/2024  22:53           0 B            ZonProX.gpr
+01/07/2024  14:04    <DIR>                 ZonProX.rep
+               15 File(s)     8.81 MB
+               31 Folder(s)

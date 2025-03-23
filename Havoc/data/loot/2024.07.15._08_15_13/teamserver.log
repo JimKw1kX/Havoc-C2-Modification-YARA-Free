@@ -1,0 +1,137 @@
+              _______           _______  _______ 
+    │\     /│(  ___  )│\     /│(  ___  )(  ____ \
+    │ )   ( ││ (   ) ││ )   ( ││ (   ) ││ (    \/
+    │ (___) ││ (___) ││ │   │ ││ │   │ ││ │      
+    │  ___  ││  ___  │( (   ) )│ │   │ ││ │      
+    │ (   ) ││ (   ) │ \ \_/ / │ │   │ ││ │      
+    │ )   ( ││ )   ( │  \   /  │ (___) ││ (____/\
+    │/     \││/     \│   \_/   (_______)(_______/
+
+  	 pwn and elevate until it's done
+
+[08:15:13] [DBUG] [cmd.init.func2:59]: Debug mode enabled
+[08:15:13] [INFO] Havoc Framework [Version: 0.7] [CodeName: Bites The Dust]
+[08:15:13] [INFO] Havoc profile: ./profiles/havoc.yaotl
+[08:15:13] [INFO] Build: 
+ - Compiler x64 : data/x86_64-w64-mingw32-cross/bin/x86_64-w64-mingw32-gcc
+ - Compiler x86 : data/i686-w64-mingw32-cross/bin/i686-w64-mingw32-gcc
+ - Nasm         : /usr/bin/nasm
+[08:15:13] [INFO] Time: 15/07/2024 08:15:13
+[08:15:13] [INFO] Teamserver logs saved under: data/loot/2024.07.15._08:15:13
+[08:15:13] [DBUG] [server.(*Teamserver).Start:53]: Starting teamserver...
+[08:15:13] [INFO] Starting Teamserver on wss://0.0.0.0:40056
+[08:15:13] [INFO] [SERVICE] starting service handle on wss://0.0.0.0:40056/service-endpoint
+[08:15:13] [INFO] Opens existing database: data/teamserver.db
+[08:15:13] [DBUG] [certs.HTTPSGenerateRSACertificate:301]: Generating TLS certificate (RSA) for '0.0.0.0' ...
+[08:15:13] [INFO] Starting 1 listeners from last session
+[08:15:13] [DBUG] [handlers.(*HTTP).Start:204]: Setup HTTP/s Server
+[08:15:13] [INFO] Started "1" listener: http://192.168.17.137:80
+[08:15:13] [INFO] Restored 17 agents from last session
+[08:15:13] [DBUG] [server.(*Teamserver).Start:492]: Wait til the server shutdown
+[08:15:13] [DBUG] [certs.generateCertificate:223]: Valid from 2024-05-19 08:15:13.958822538 -0400 EDT to 2027-05-19 08:15:13.958822538 -0400 EDT
+[08:15:13] [DBUG] [certs.generateCertificate:228]: Serial Number: 305101781834057022700913122612743264579
+[08:15:13] [DBUG] [certs.generateCertificate:234]: Authority certificate
+[08:15:13] [DBUG] [certs.generateCertificate:247]: ExtKeyUsage = [1 2]
+[08:15:13] [DBUG] [certs.generateCertificate:263]: Certificate authenticates IP address: 0.0.0.0
+[08:15:13] [DBUG] [certs.generateCertificate:278]: Certificate is an AUTHORITY
+[08:15:14] [DBUG] [handlers.handleDemonAgent:84]: Agent: 7c2145c2, Command: DEMON_INIT
+[08:15:14] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[08:15:14] [DBUG] [handlers.handleDemonAgent:95]: reconnected ab11b9cc
+[08:15:17] [DBUG] [handlers.handleDemonAgent:84]: Agent: 19948ae, Command: DEMON_INIT
+[08:15:17] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[08:15:17] [DBUG] [handlers.handleDemonAgent:95]: reconnected c99776fa
+[08:15:18] [DBUG] [handlers.handleDemonAgent:84]: Agent: 7daa34d6, Command: DEMON_INIT
+[08:15:18] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[08:15:18] [DBUG] [handlers.handleDemonAgent:95]: reconnected f3e4aa84
+[08:15:21] [DBUG] [handlers.handleDemonAgent:84]: Agent: 64c3ca24, Command: DEMON_INIT
+[08:15:21] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[08:15:21] [DBUG] [handlers.handleDemonAgent:95]: reconnected 4eb94a08
+[08:15:36] [DBUG] [server.(*Teamserver).ClientAuthenticate:658]: Found User: BDO
+[08:15:36] [DBUG] [server.(*Teamserver).ClientAuthenticate:665]: User BDO is authenticated
+[08:15:36] [GOOD] User <BDO> Authenticated
+[08:31:47] [DBUG] [handlers.handleDemonAgent:262]: Agent does not exists. hope this is a register request
+[08:31:47] [DBUG] [agent.ParseDemonRegisterRequest:404]: Parsed DemonID: 6664dfd2
+[08:31:47] [DBUG] [agent.ParseDemonRegisterRequest:412]: AgentID (6664dfd2) == DemonID (6664dfd2)
+
+[08:31:47] [DBUG] [agent.ParseDemonRegisterRequest:424]: 
+Hostname: WINDEV2401EVAL
+Username: User
+Domain  : 
+InternIP: 192.168.17.131
+ExternIP: 192.168.17.131
+
+[08:31:47] [DBUG] [agent.ParseDemonRegisterRequest:441]: 
+ProcessName : C:\Program Files\WindowsApps\Microsoft.WindowsNotepad_11.2402.22.0_x64__8wekyb3d8bbwe\Notepad\Notepad.exe
+ProcessPID  : 3820
+ProcessTID  : 572
+ProcessPPID : 0
+ProcessArch : 2
+Elevated    : 0
+Base Address: 0x1cc177d0000
+
+[08:31:47] [DBUG] [agent.ParseDemonRegisterRequest:459]: 
+SleepDelay  : 2
+SleepJitter : 15
+
+[08:31:47] [DBUG] [agent.ParseDemonRegisterRequest:594]: Finished parsing demon
+[08:31:47] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[08:31:47] [DBUG] [handlers.handleDemonAgent:295]: Finished request
+[08:33:33] [DBUG] [handlers.handleDemonAgent:262]: Agent does not exists. hope this is a register request
+[08:33:33] [DBUG] [agent.ParseDemonRegisterRequest:404]: Parsed DemonID: 82c70da
+[08:33:33] [DBUG] [agent.ParseDemonRegisterRequest:412]: AgentID (82c70da) == DemonID (82c70da)
+
+[08:33:33] [DBUG] [agent.ParseDemonRegisterRequest:424]: 
+Hostname: WINDEV2401EVAL
+Username: User
+Domain  : 
+InternIP: 192.168.17.131
+ExternIP: 192.168.17.131
+
+[08:33:33] [DBUG] [agent.ParseDemonRegisterRequest:441]: 
+ProcessName : C:\Program Files\WindowsApps\Microsoft.WindowsNotepad_11.2402.22.0_x64__8wekyb3d8bbwe\Notepad\Notepad.exe
+ProcessPID  : 19552
+ProcessTID  : 17400
+ProcessPPID : 0
+ProcessArch : 2
+Elevated    : 0
+Base Address: 0x21d7c7b0000
+
+[08:33:33] [DBUG] [agent.ParseDemonRegisterRequest:459]: 
+SleepDelay  : 2
+SleepJitter : 15
+
+[08:33:33] [DBUG] [agent.ParseDemonRegisterRequest:594]: Finished parsing demon
+[08:33:33] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[08:33:33] [DBUG] [handlers.handleDemonAgent:295]: Finished request
+[08:42:41] [ERRO] Error reading : read tcp 192.168.17.137:40056->192.168.17.137:52420: read: connection timed out
+[08:42:41] [ERRO] Socket Error: tls: failed to send closeNotify alert (but connection was closed anyway): write tcp 192.168.17.137:40056->192.168.17.137:52420: write: broken pipe
+[08:53:54] [DBUG] [handlers.handleDemonAgent:84]: Agent: 7daa34d6, Command: DEMON_INIT
+[08:53:54] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[08:53:54] [DBUG] [handlers.handleDemonAgent:95]: reconnected f3e4aa84
+[08:53:54] [DBUG] [handlers.handleDemonAgent:84]: Agent: 7c2145c2, Command: DEMON_INIT
+[08:53:54] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[08:53:54] [DBUG] [handlers.handleDemonAgent:95]: reconnected ab11b9cc
+[08:53:56] [DBUG] [handlers.handleDemonAgent:84]: Agent: 82c70da, Command: DEMON_INIT
+[08:53:56] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[08:53:56] [DBUG] [handlers.handleDemonAgent:95]: reconnected c12dc053
+[08:53:59] [DBUG] [handlers.handleDemonAgent:84]: Agent: 19948ae, Command: DEMON_INIT
+[08:53:59] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[08:53:59] [DBUG] [handlers.handleDemonAgent:95]: reconnected c99776fa
+[08:53:59] [DBUG] [handlers.handleDemonAgent:84]: Agent: 64c3ca24, Command: DEMON_INIT
+[08:53:59] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[08:53:59] [DBUG] [handlers.handleDemonAgent:95]: reconnected 4eb94a08
+[09:31:49] [DBUG] [handlers.handleDemonAgent:84]: Agent: 7daa34d6, Command: DEMON_INIT
+[09:31:49] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[09:31:49] [DBUG] [handlers.handleDemonAgent:95]: reconnected f3e4aa84
+[09:31:49] [DBUG] [handlers.handleDemonAgent:84]: Agent: 7c2145c2, Command: DEMON_INIT
+[09:31:49] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[09:31:49] [DBUG] [handlers.handleDemonAgent:95]: reconnected ab11b9cc
+[09:31:50] [DBUG] [handlers.handleDemonAgent:84]: Agent: 19948ae, Command: DEMON_INIT
+[09:31:50] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[09:31:50] [DBUG] [handlers.handleDemonAgent:95]: reconnected c99776fa
+[09:31:50] [DBUG] [handlers.handleDemonAgent:84]: Agent: 64c3ca24, Command: DEMON_INIT
+[09:31:50] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[09:31:50] [DBUG] [handlers.handleDemonAgent:95]: reconnected 4eb94a08
+[09:31:50] [DBUG] [handlers.handleDemonAgent:84]: Agent: 82c70da, Command: DEMON_INIT
+[09:31:50] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[09:31:50] [DBUG] [handlers.handleDemonAgent:95]: reconnected c12dc053

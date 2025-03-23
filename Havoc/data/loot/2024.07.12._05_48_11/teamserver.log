@@ -1,0 +1,54 @@
+              _______           _______  _______ 
+    │\     /│(  ___  )│\     /│(  ___  )(  ____ \
+    │ )   ( ││ (   ) ││ )   ( ││ (   ) ││ (    \/
+    │ (___) ││ (___) ││ │   │ ││ │   │ ││ │      
+    │  ___  ││  ___  │( (   ) )│ │   │ ││ │      
+    │ (   ) ││ (   ) │ \ \_/ / │ │   │ ││ │      
+    │ )   ( ││ )   ( │  \   /  │ (___) ││ (____/\
+    │/     \││/     \│   \_/   (_______)(_______/
+
+  	 pwn and elevate until it's done
+
+[05:48:11] [DBUG] [cmd.init.func2:59]: Debug mode enabled
+[05:48:11] [INFO] Havoc Framework [Version: 0.7] [CodeName: Bites The Dust]
+[05:48:11] [INFO] Havoc profile: ./profiles/havoc.yaotl
+[05:48:11] [INFO] Build: 
+ - Compiler x64 : data/x86_64-w64-mingw32-cross/bin/x86_64-w64-mingw32-gcc
+ - Compiler x86 : data/i686-w64-mingw32-cross/bin/i686-w64-mingw32-gcc
+ - Nasm         : /usr/bin/nasm
+[05:48:11] [INFO] Time: 12/07/2024 05:48:11
+[05:48:11] [INFO] Teamserver logs saved under: data/loot/2024.07.12._05:48:11
+[05:48:11] [DBUG] [server.(*Teamserver).Start:53]: Starting teamserver...
+[05:48:11] [INFO] Starting Teamserver on wss://0.0.0.0:40056
+[05:48:11] [INFO] [SERVICE] starting service handle on wss://0.0.0.0:40056/service-endpoint
+[05:48:11] [INFO] Opens existing database: data/teamserver.db
+[05:48:11] [DBUG] [certs.HTTPSGenerateRSACertificate:301]: Generating TLS certificate (RSA) for '0.0.0.0' ...
+[05:48:11] [DBUG] [server.(*Teamserver).Start:492]: Wait til the server shutdown
+[05:48:11] [DBUG] [certs.generateCertificate:223]: Valid from 2023-11-30 05:48:11.733706492 -0500 EST to 2026-11-29 05:48:11.733706492 -0500 EST
+[05:48:11] [DBUG] [certs.generateCertificate:228]: Serial Number: 243852771394992521669029594877873977066
+[05:48:11] [DBUG] [certs.generateCertificate:234]: Authority certificate
+[05:48:11] [DBUG] [certs.generateCertificate:247]: ExtKeyUsage = [1 2]
+[05:48:11] [DBUG] [certs.generateCertificate:263]: Certificate authenticates IP address: 0.0.0.0
+[05:48:11] [DBUG] [certs.generateCertificate:278]: Certificate is an AUTHORITY
+[05:48:34] [DBUG] [server.(*Teamserver).ClientAuthenticate:658]: Found User: 5pider
+[05:48:34] [DBUG] [server.(*Teamserver).ClientAuthenticate:665]: User 5pider is authenticated
+[05:48:34] [GOOD] User <5pider> Authenticated
+[05:48:46] [DBUG] [handlers.(*HTTP).Start:204]: Setup HTTP/s Server
+[05:48:46] [INFO] Started "1" listener: http://192.168.17.137:80
+[05:48:52] [DBUG] [builder.NewBuilder:179]: Payload Builder: Enable Debug Mode false
+[05:48:52] [DBUG] [server.(*Teamserver).DispatchEvent.func18:882]: Windows Shellcode
+[05:48:52] [DBUG] [builder.(*Builder).PatchConfig:579]: map[Amsi/Etw Patch:Hardware breakpoints Indirect Syscall:false Injection:map[Alloc:Native/Syscall Execute:Native/Syscall Spawn32:C:\Windows\SysWOW64\notepad.exe Spawn64:C:\Windows\System32\notepad.exe] Jitter:15 Proxy Loading:RtlRegisterWait Sleep:2 Sleep Jmp Gadget:jmp rax Sleep Technique:Foliage Stack Duplication:false]
+[05:48:52] [DBUG] [builder.(*Builder).PatchConfig:915]: Host => 192.168.17.137
+[05:48:52] [DBUG] [builder.(*Builder).PatchConfig:940]: host only
+[05:48:52] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Spoof.x64.asm -o /tmp/eeb3bfb778/d8d9c8dc0e.o
+[05:48:52] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Syscall.x64.asm -o /tmp/eeb3bfb778/9575ab42d9.o
+[05:48:52] [DBUG] [builder.(*Builder).Build:389]: Compile dll and prepend shellcode to it.
+[05:48:52] [DBUG] [builder.NewBuilder:179]: Payload Builder: Enable Debug Mode false
+[05:48:52] [DBUG] [builder.(*Builder).SetPatchConfig:465]: Set Patch config from Profile
+[05:48:52] [DBUG] [builder.(*Builder).PatchConfig:579]: map[Amsi/Etw Patch:Hardware breakpoints Indirect Syscall:false Injection:map[Alloc:Native/Syscall Execute:Native/Syscall Spawn32:C:\Windows\SysWOW64\notepad.exe Spawn64:C:\Windows\System32\notepad.exe] Jitter:15 Proxy Loading:RtlRegisterWait Sleep:2 Sleep Jmp Gadget:jmp rax Sleep Technique:Foliage Stack Duplication:false]
+[05:48:52] [DBUG] [builder.(*Builder).PatchConfig:915]: Host => 192.168.17.137
+[05:48:52] [DBUG] [builder.(*Builder).PatchConfig:940]: host only
+[05:48:52] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Spoof.x64.asm -o /tmp/3fe38ca342/ec3bfa0950.o
+[05:48:52] [DBUG] [builder.(*Builder).Build:331]: /usr/bin/nasm -f win64 src/asm/Syscall.x64.asm -o /tmp/3fe38ca342/e15440c1f0.o
+[05:48:52] [DBUG] [builder.(*Builder).Build:379]: Compile dll
+[05:49:48] [DBUG] [builder.(*Builder).Build:410]: Successful compiled Dll

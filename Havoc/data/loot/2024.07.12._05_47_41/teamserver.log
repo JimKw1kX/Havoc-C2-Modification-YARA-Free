@@ -1,0 +1,33 @@
+              _______           _______  _______ 
+    │\     /│(  ___  )│\     /│(  ___  )(  ____ \
+    │ )   ( ││ (   ) ││ )   ( ││ (   ) ││ (    \/
+    │ (___) ││ (___) ││ │   │ ││ │   │ ││ │      
+    │  ___  ││  ___  │( (   ) )│ │   │ ││ │      
+    │ (   ) ││ (   ) │ \ \_/ / │ │   │ ││ │      
+    │ )   ( ││ )   ( │  \   /  │ (___) ││ (____/\
+    │/     \││/     \│   \_/   (_______)(_______/
+
+  	 pwn and elevate until it's done
+
+[05:47:41] [DBUG] [cmd.init.func2:59]: Debug mode enabled
+[05:47:41] [INFO] Havoc Framework [Version: 0.7] [CodeName: Bites The Dust]
+[05:47:41] [INFO] Havoc profile: ./profiles/havoc.yaotl
+[05:47:41] [INFO] Build: 
+ - Compiler x64 : data/x86_64-w64-mingw32-cross/bin/x86_64-w64-mingw32-gcc
+ - Compiler x86 : data/i686-w64-mingw32-cross/bin/i686-w64-mingw32-gcc
+ - Nasm         : /usr/bin/nasm
+[05:47:41] [INFO] Time: 12/07/2024 05:47:41
+[05:47:41] [INFO] Teamserver logs saved under: data/loot/2024.07.12._05:47:41
+[05:47:41] [DBUG] [server.(*Teamserver).Start:53]: Starting teamserver...
+[05:47:41] [INFO] Starting Teamserver on wss://0.0.0.0:40056
+[05:47:41] [INFO] [SERVICE] starting service handle on wss://0.0.0.0:40056/service-endpoint
+[05:47:41] [INFO] Opens existing database: data/teamserver.db
+[05:47:41] [DBUG] [certs.HTTPSGenerateRSACertificate:301]: Generating TLS certificate (RSA) for '0.0.0.0' ...
+[05:47:41] [DBUG] [server.(*Teamserver).Start:492]: Wait til the server shutdown
+[05:47:41] [DBUG] [certs.generateCertificate:223]: Valid from 2024-06-10 05:47:41.482298122 -0400 EDT to 2027-06-10 05:47:41.482298122 -0400 EDT
+[05:47:41] [DBUG] [certs.generateCertificate:228]: Serial Number: 290488457349712176802392769597932921408
+[05:47:41] [DBUG] [certs.generateCertificate:234]: Authority certificate
+[05:47:41] [DBUG] [certs.generateCertificate:247]: ExtKeyUsage = [1 2]
+[05:47:41] [DBUG] [certs.generateCertificate:263]: Certificate authenticates IP address: 0.0.0.0
+[05:47:41] [DBUG] [certs.generateCertificate:278]: Certificate is an AUTHORITY
+[05:47:41] [ERRO] Failed to start websocket: listen tcp 0.0.0.0:40056: bind: address already in use

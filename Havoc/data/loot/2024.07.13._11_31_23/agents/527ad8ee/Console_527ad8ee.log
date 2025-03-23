@@ -1,0 +1,42 @@
+
+[Time: 13/07/2024 15:44:50] [User: 5pider] [TaskID: E5F20971] Demon => sleep 3
+[13/07/2024 15:44:52] [+] Send Task to Agent [20 bytes]
+[13/07/2024 15:44:55] [+] Set sleep interval to 3 seconds with 0% jitter
+
+[Time: 13/07/2024 15:44:56] [User: 5pider] [TaskID: B8D6E9C7] Demon => 
+
+[Time: 13/07/2024 15:44:56] [User: 5pider] [TaskID: B8D6E9C7] Demon => whoami
+[13/07/2024 15:44:58] [+] Send Task to Agent [31 bytes]
+[13/07/2024 15:45:01] [+] Received Output [3577 bytes]:
+
+UserName		SID
+====================== ====================================
+WINDEV2401EVAL\User	S-1-5-21-492658040-2737317036-1342630635-1000
+
+
+GROUP INFORMATION                                 Type                     SID                                          Attributes               
+================================================= ===================== ============================================= ==================================================
+WINDEV2401EVAL\None                               Group                    S-1-5-21-492658040-2737317036-1342630635-513  Mandatory group, Enabled by default, Enabled group, 
+Everyone                                          Well-known group         S-1-1-0                                       Mandatory group, Enabled by default, Enabled group, 
+NT AUTHORITY\Local account and member of Administrators groupWell-known group         S-1-5-114                                     
+BUILTIN\Administrators                            Alias                    S-1-5-32-544                                  
+BUILTIN\Users                                     Alias                    S-1-5-32-545                                  Mandatory group, Enabled by default, Enabled group, 
+BUILTIN\Performance Log Users                     Alias                    S-1-5-32-559                                  Mandatory group, Enabled by default, Enabled group, 
+NT AUTHORITY\INTERACTIVE                          Well-known group         S-1-5-4                                       Mandatory group, Enabled by default, Enabled group, 
+CONSOLE LOGON                                     Well-known group         S-1-2-1                                       Mandatory group, Enabled by default, Enabled group, 
+NT AUTHORITY\Authenticated Users                  Well-known group         S-1-5-11                                      Mandatory group, Enabled by default, Enabled group, 
+NT AUTHORITY\This Organization                    Well-known group         S-1-5-15                                      Mandatory group, Enabled by default, Enabled group, 
+NT AUTHORITY\Local account                        Well-known group         S-1-5-113                                     Mandatory group, Enabled by default, Enabled group, 
+LOCAL                                             Well-known group         S-1-2-0                                       Mandatory group, Enabled by default, Enabled group, 
+NT AUTHORITY\NTLM Authentication                  Well-known group         S-1-5-64-10                                   Mandatory group, Enabled by default, Enabled group, 
+Mandatory Label\Medium Mandatory Level            Label                    S-1-16-8192                                   Mandatory group, Enabled by default, Enabled group, 
+
+
+Privilege Name                Description                                       State                         
+============================= ================================================= ===========================
+SeShutdownPrivilege           Shut down the system                              Disabled                      
+SeChangeNotifyPrivilege       Bypass traverse checking                          Enabled                       
+SeUndockPrivilege             Remove computer from docking station              Disabled                      
+SeIncreaseWorkingSetPrivilege Increase a process working set                    Disabled                      
+SeTimeZonePrivilege           Change the time zone                              Disabled                      
+[13/07/2024 15:45:01] [*] BOF execution completed

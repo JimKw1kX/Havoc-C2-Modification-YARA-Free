@@ -1,0 +1,4 @@
+
+[Time: 15/07/2024 09:54:32] [User: 5pider] [TaskID: 73F869B0] Demon => sleep 3
+[15/07/2024 09:54:33] [+] Send Task to Agent [20 bytes]
+[15/07/2024 09:54:37] [+] Set sleep interval to 3 seconds with 0% jitter

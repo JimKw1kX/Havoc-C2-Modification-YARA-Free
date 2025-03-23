@@ -1,0 +1,37 @@
+              _______           _______  _______ 
+    │\     /│(  ___  )│\     /│(  ___  )(  ____ \
+    │ )   ( ││ (   ) ││ )   ( ││ (   ) ││ (    \/
+    │ (___) ││ (___) ││ │   │ ││ │   │ ││ │      
+    │  ___  ││  ___  │( (   ) )│ │   │ ││ │      
+    │ (   ) ││ (   ) │ \ \_/ / │ │   │ ││ │      
+    │ )   ( ││ )   ( │  \   /  │ (___) ││ (____/\
+    │/     \││/     \│   \_/   (_______)(_______/
+
+  	 pwn and elevate until it's done
+
+[06:45:05] [DBUG] [cmd.init.func2:59]: Debug mode enabled
+[06:45:05] [INFO] Havoc Framework [Version: 0.7] [CodeName: Bites The Dust]
+[06:45:05] [INFO] Havoc profile: ./profiles/havoc.yaotl
+[06:45:05] [INFO] Build: 
+ - Compiler x64 : data/x86_64-w64-mingw32-cross/bin/x86_64-w64-mingw32-gcc
+ - Compiler x86 : data/i686-w64-mingw32-cross/bin/i686-w64-mingw32-gcc
+ - Nasm         : /usr/bin/nasm
+[06:45:05] [INFO] Time: 13/07/2024 06:45:05
+[06:45:05] [INFO] Teamserver logs saved under: data/loot/2024.07.13._06:45:05
+[06:45:05] [DBUG] [server.(*Teamserver).Start:53]: Starting teamserver...
+[06:45:05] [INFO] Starting Teamserver on wss://0.0.0.0:40056
+[06:45:05] [INFO] [SERVICE] starting service handle on wss://0.0.0.0:40056/service-endpoint
+[06:45:05] [INFO] Opens existing database: data/teamserver.db
+[06:45:05] [DBUG] [certs.HTTPSGenerateRSACertificate:301]: Generating TLS certificate (RSA) for '0.0.0.0' ...
+[06:45:05] [INFO] Starting 1 listeners from last session
+[06:45:05] [DBUG] [handlers.(*HTTP).Start:204]: Setup HTTP/s Server
+[06:45:05] [INFO] Started "1" listener: http://192.168.17.137:80
+[06:45:05] [ERRO] Couldn't start HTTP handler: listen tcp 192.168.17.137:80: bind: cannot assign requested address
+[06:45:05] [INFO] Restored 5 agents from last session
+[06:45:05] [DBUG] [server.(*Teamserver).Start:492]: Wait til the server shutdown
+[06:45:05] [DBUG] [certs.generateCertificate:223]: Valid from 2023-12-17 06:45:05.881878737 -0500 EST to 2026-12-16 06:45:05.881878737 -0500 EST
+[06:45:05] [DBUG] [certs.generateCertificate:228]: Serial Number: 214300079149346031646213075913424782514
+[06:45:05] [DBUG] [certs.generateCertificate:234]: Authority certificate
+[06:45:05] [DBUG] [certs.generateCertificate:247]: ExtKeyUsage = [1 2]
+[06:45:05] [DBUG] [certs.generateCertificate:263]: Certificate authenticates IP address: 0.0.0.0
+[06:45:05] [DBUG] [certs.generateCertificate:278]: Certificate is an AUTHORITY
