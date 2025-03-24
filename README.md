@@ -3,7 +3,7 @@
 # POC of modifying YARA signautre on [Havoc C2](https://github.com/HavocFramework/Havoc). 
 This project was from a red team engagement where I modified an open-source Command-and-Control (C2) framework to ensure it was YARA-free, enabling safer in-memory execution via a loader and evading detection by common YARA scans used by Endpoint Detection and Response (EDR) systems. I successfully achieved 0% YARA detection. The main steps are as follows:
 
-First when I did a yara scan using a simple [python script](https://github.com/JimKw1kX/Havoc-C2-Modification-YARA-Free/blob/main/Yara%20Scan%20Checker/yara_check.py) on a piece of shellcode I got the following YARA signature
+First when I did a yara scan using a simple [python script](https://github.com/JimKw1kX/Havoc-C2-Modification-YARA-Free/blob/main/Yara%20Scan%20Checker/yara_check.py) on a piece of shellcode I got the following YARA signatures:
 
 ![yara](https://github.com/JimKw1kX/Havoc-C2-Modification-YARA-Free/blob/main/Images/yara-scan.png)
 
