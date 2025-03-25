@@ -1,3 +1,6 @@
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[![Follow @JimKwik_X](https://img.shields.io/twitter/follow/JimKwik_X?style=social)](https://x.com/JimKwik_X)
+
 # Havoc-C2-Modification-YARA-Free
 
 # POC of modifying YARA signautre on [Havoc C2](https://github.com/HavocFramework/Havoc). 
