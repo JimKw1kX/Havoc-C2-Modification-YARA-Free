@@ -183,6 +183,7 @@ for fileanme in os.listdir(directory):
 
 # DEMO 
 
+A modified version is in [here](https://github.com/JimKw1kX/Havoc-C2-Modification-YARA-Free/tree/main/Havoc) 
 You can also check out the demo for the final version of the cleaned shellcode YARA scan [here](https://drive.google.com/file/d/1vkOEhy7eR_kjewiJaoxkTosBVLG5HxkB/view?usp=sharing)
 
 
